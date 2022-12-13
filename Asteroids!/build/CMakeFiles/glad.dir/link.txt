@@ -1,0 +1,2 @@
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libglad.a "CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_gl.c.obj" "CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_vulkan.c.obj" "CMakeFiles/glad.dir/glfw-3.3.7/deps/tinycthread.c.obj"
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe libglad.a

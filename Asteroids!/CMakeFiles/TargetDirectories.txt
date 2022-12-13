@@ -1,0 +1,10 @@
+/Users/tulane/whealy/Comp_graphics/Asteroids!/CMakeFiles/glad.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/CMakeFiles/asteroids.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/CMakeFiles/edit_cache.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/CMakeFiles/rebuild_cache.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/CMakeFiles/edit_cache.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/CMakeFiles/rebuild_cache.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/CMakeFiles/update_mappings.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/CMakeFiles/glfw.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/CMakeFiles/edit_cache.dir
+/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/CMakeFiles/rebuild_cache.dir

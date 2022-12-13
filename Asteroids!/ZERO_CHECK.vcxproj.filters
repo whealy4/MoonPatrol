@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\CMakeFiles\7c1fd6ec64e2c2f1c78d1b98cf9c1c75\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B824FE0C-F5E4-3974-91CF-1D68BA5FEEEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

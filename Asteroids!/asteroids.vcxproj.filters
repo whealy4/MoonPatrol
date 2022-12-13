@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\utils\u8names.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\shaders\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\Ship.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\Asteroid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\utils\shader_process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\utils\u8names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\Ship.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\source\Asteroid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\shaders\fshader_Ship.glsl" />
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\shaders\vshader_Ship.glsl" />
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\shaders\fshader_Asteroid.glsl" />
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\shaders\vshader_Asteroid.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ADCBFAE6-02F6-37AD-A31C-F336D9AC5803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AAE03AD5-15C4-3C29-9CE2-B9F3808300AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

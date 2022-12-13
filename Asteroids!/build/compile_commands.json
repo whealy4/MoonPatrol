@@ -1,0 +1,127 @@
+[
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe  @CMakeFiles/glad.dir/includes_C.rsp -O3 -DNDEBUG -o CMakeFiles\\glad.dir\\glfw-3.3.7\\deps\\glad_gl.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\deps\\glad_gl.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/deps/glad_gl.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe  @CMakeFiles/glad.dir/includes_C.rsp -O3 -DNDEBUG -o CMakeFiles\\glad.dir\\glfw-3.3.7\\deps\\glad_vulkan.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\deps\\glad_vulkan.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe  @CMakeFiles/glad.dir/includes_C.rsp -O3 -DNDEBUG -o CMakeFiles\\glad.dir\\glfw-3.3.7\\deps\\tinycthread.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\deps\\tinycthread.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/deps/tinycthread.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\source\\utils\\u8names.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\source\\utils\\u8names.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/source/utils/u8names.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\shaders\\shader.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\shaders\\shader.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/shaders/shader.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\source\\main.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\source\\main.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/source/main.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\source\\Ship.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\source\\Ship.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/source/Ship.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\source\\Asteroid.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\source\\Asteroid.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/source/Asteroid.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\source\\Car.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\source\\Car.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/source/Car.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/asteroids.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\asteroids.dir\\source\\Ground.cpp.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\source\\Ground.cpp",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/source/Ground.cpp"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\context.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\context.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/context.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\init.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\init.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/init.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\input.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\input.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/input.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\monitor.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\monitor.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/monitor.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\vulkan.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\vulkan.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/vulkan.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\window.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\window.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/window.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_init.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\win32_init.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/win32_init.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\win32_joystick.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/win32_joystick.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\win32_monitor.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/win32_monitor.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_time.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\win32_time.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/win32_time.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_thread.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\win32_thread.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/win32_thread.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_window.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\win32_window.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/win32_window.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\wgl_context.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\wgl_context.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/wgl_context.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\egl_context.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\egl_context.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/egl_context.c"
+},
+{
+  "directory": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/build/glfw-3.3.7/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -O3 -DNDEBUG -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c C:\\Users\\wjhea\\Desktop\\Tulane\\CMPS_Masters\\Comp_Graphics\\Project\\final-game-project-moon-patrol\\Asteroids!\\glfw-3.3.7\\src\\osmesa_context.c",
+  "file": "C:/Users/wjhea/Desktop/Tulane/CMPS_Masters/Comp_Graphics/Project/final-game-project-moon-patrol/Asteroids!/glfw-3.3.7/src/osmesa_context.c"
+}
+]

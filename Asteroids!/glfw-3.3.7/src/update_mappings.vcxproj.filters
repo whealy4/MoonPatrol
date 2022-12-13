@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\CMakeFiles\8c66ba4ac0ec40cb90fe122ba6811c93\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\glfw-3.3.7\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\glfw-3.3.7\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\glfw-3.3.7\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\wjhea\Desktop\Tulane\CMPS_Masters\Comp_Graphics\Project\final-game-project-moon-patrol\Asteroids!\glfw-3.3.7\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B824FE0C-F5E4-3974-91CF-1D68BA5FEEEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ADCBFAE6-02F6-37AD-A31C-F336D9AC5803}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

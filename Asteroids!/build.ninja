@@ -1,0 +1,503 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: ASTEROIDS
+# Configurations: Release
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/tulane/whealy/Comp_graphics/Asteroids!/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Order-only phony target for glad
+
+build cmake_object_order_depends_target_glad: phony || cmake_object_order_depends_target_glfw
+
+build CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_gl.c.o: C_COMPILER__glad_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps/glad_gl.c || cmake_object_order_depends_target_glad
+  DEP_FILE = CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_gl.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/glad.dir
+  OBJECT_FILE_DIR = CMakeFiles/glad.dir/glfw-3.3.7/deps
+
+build CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_vulkan.c.o: C_COMPILER__glad_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c || cmake_object_order_depends_target_glad
+  DEP_FILE = CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_vulkan.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/glad.dir
+  OBJECT_FILE_DIR = CMakeFiles/glad.dir/glfw-3.3.7/deps
+
+build CMakeFiles/glad.dir/glfw-3.3.7/deps/tinycthread.c.o: C_COMPILER__glad_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps/tinycthread.c || cmake_object_order_depends_target_glad
+  DEP_FILE = CMakeFiles/glad.dir/glfw-3.3.7/deps/tinycthread.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/glad.dir
+  OBJECT_FILE_DIR = CMakeFiles/glad.dir/glfw-3.3.7/deps
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Link the static library libglad.a
+
+build libglad.a: C_STATIC_LIBRARY_LINKER__glad_Release CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_gl.c.o CMakeFiles/glad.dir/glfw-3.3.7/deps/glad_vulkan.c.o CMakeFiles/glad.dir/glfw-3.3.7/deps/tinycthread.c.o || glfw-3.3.7/src/libglfw3.a
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = CMakeFiles/glad.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libglad.a
+  TARGET_PDB = glad.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target asteroids
+
+
+#############################################
+# Order-only phony target for asteroids
+
+build cmake_object_order_depends_target_asteroids: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build CMakeFiles/asteroids.dir/source/utils/u8names.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/utils/u8names.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/utils/u8names.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source/utils
+
+build CMakeFiles/asteroids.dir/source/utils/lodepng.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/utils/lodepng.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/utils/lodepng.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source/utils
+
+build CMakeFiles/asteroids.dir/shaders/shader.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/shaders/shader.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/shaders/shader.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/shaders
+
+build CMakeFiles/asteroids.dir/source/main.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/main.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/main.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Game.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Game.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Game.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Ship.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Ship.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Ship.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Asteroid.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Asteroid.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Asteroid.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Alien1.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Alien1.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Alien1.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Car.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Car.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Car.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Ground.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Ground.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Ground.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/Wheel.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Wheel.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Wheel.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target asteroids
+
+
+#############################################
+# Link the executable asteroids.app/Contents/MacOS/asteroids
+
+build asteroids.app/Contents/MacOS/asteroids: CXX_EXECUTABLE_LINKER__asteroids_Release CMakeFiles/asteroids.dir/source/utils/u8names.cpp.o CMakeFiles/asteroids.dir/source/utils/lodepng.cpp.o CMakeFiles/asteroids.dir/shaders/shader.cpp.o CMakeFiles/asteroids.dir/source/main.cpp.o CMakeFiles/asteroids.dir/source/Game.cpp.o CMakeFiles/asteroids.dir/source/Ship.cpp.o CMakeFiles/asteroids.dir/source/Asteroid.cpp.o CMakeFiles/asteroids.dir/source/Alien1.cpp.o CMakeFiles/asteroids.dir/source/Car.cpp.o CMakeFiles/asteroids.dir/source/Ground.cpp.o CMakeFiles/asteroids.dir/source/Wheel.cpp.o | glfw-3.3.7/src/libglfw3.a libglad.a glfw-3.3.7/src/libglfw3.a || glfw-3.3.7/src/libglfw3.a libglad.a
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  LINK_LIBRARIES = glfw-3.3.7/src/libglfw3.a  libglad.a  glfw-3.3.7/src/libglfw3.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = asteroids.app/Contents/MacOS/asteroids
+  TARGET_PDB = asteroids.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids! && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids! && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/tulane/whealy/Comp_graphics/Asteroids! -B/Users/tulane/whealy/Comp_graphics/Asteroids!
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tulane/whealy/Comp_graphics/Asteroids!/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build glfw-3.3.7/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glfw-3.3.7/edit_cache: phony glfw-3.3.7/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glfw-3.3.7/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/tulane/whealy/Comp_graphics/Asteroids! -B/Users/tulane/whealy/Comp_graphics/Asteroids!
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glfw-3.3.7/rebuild_cache: phony glfw-3.3.7/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for update_mappings
+
+build glfw-3.3.7/src/update_mappings: phony glfw-3.3.7/src/CMakeFiles/update_mappings
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/context.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/init.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/input.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/input.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/monitor.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/vulkan.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/vulkan.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/window.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/cocoa_init.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_init.m.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/cocoa_window.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_window.m.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/cocoa_time.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_time.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/posix_thread.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/posix_thread.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/nsgl_context.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/nsgl_context.m.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/egl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/egl_context.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+build glfw-3.3.7/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw-3.3.7/src/CMakeFiles/glfw.dir/osmesa_context.c.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -fcolor-diagnostics -Wall -std=gnu99
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library glfw-3.3.7/src/libglfw3.a
+
+build glfw-3.3.7/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Release glfw-3.3.7/src/CMakeFiles/glfw.dir/context.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/init.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/input.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/monitor.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/vulkan.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/window.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_init.m.o glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_window.m.o glfw-3.3.7/src/CMakeFiles/glfw.dir/cocoa_time.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/posix_thread.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/nsgl_context.m.o glfw-3.3.7/src/CMakeFiles/glfw.dir/egl_context.c.o glfw-3.3.7/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = glfw-3.3.7/src/CMakeFiles/glfw.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = glfw-3.3.7/src/libglfw3.a
+  TARGET_PDB = glfw3.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build glfw-3.3.7/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glfw-3.3.7/src/edit_cache: phony glfw-3.3.7/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glfw-3.3.7/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/tulane/whealy/Comp_graphics/Asteroids! -B/Users/tulane/whealy/Comp_graphics/Asteroids!
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glfw-3.3.7/src/rebuild_cache: phony glfw-3.3.7/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for glfw-3.3.7/src/CMakeFiles/update_mappings
+
+build glfw-3.3.7/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}glfw-3.3.7/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
+  COMMAND = cd /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  DESC = Updating gamepad mappings from upstream repository
+
+# =============================================================================
+# Target aliases.
+
+build asteroids: phony asteroids.app/Contents/MacOS/asteroids
+
+build glad: phony libglad.a
+
+build glfw: phony glfw-3.3.7/src/libglfw3.a
+
+build libglfw3.a: phony glfw-3.3.7/src/libglfw3.a
+
+build update_mappings: phony glfw-3.3.7/src/update_mappings
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tulane/whealy/Comp_graphics/Asteroids!
+
+build all: phony libglad.a asteroids.app/Contents/MacOS/asteroids glfw-3.3.7/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7
+
+build glfw-3.3.7/all: phony glfw-3.3.7/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/src
+
+build glfw-3.3.7/src/all: phony glfw-3.3.7/src/libglfw3.a
+
+# =============================================================================
+# Unknown Build Time Dependencies.
+# Tell Ninja that they may appear as side effects of build rules
+# otherwise ordered by order-only dependencies.
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt glfw-3.3.7/CMakeLists.txt glfw-3.3.7/src/CMakeLists.txt glfw-3.3.7/src/glfw3.pc.in glfw-3.3.7/src/glfw3Config.cmake.in glfw-3.3.7/src/glfw_config.h.in shaders/shader.cpp.in
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt glfw-3.3.7/CMakeLists.txt glfw-3.3.7/src/CMakeLists.txt glfw-3.3.7/src/glfw3.pc.in glfw-3.3.7/src/glfw3Config.cmake.in glfw-3.3.7/src/glfw_config.h.in shaders/shader.cpp.in: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

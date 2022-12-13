@@ -1,0 +1,1468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		59B8EFC07EBB49B8966CD153 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D32F7112955748A8AFE59668 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B23309B64F971C3BD001999D /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		65F2EE5DF1A74450A72392E6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F50BBF5C8A1549608AD1A8E6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				930153BB288EC756EDE6AF98 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				848776531D8B4DAF9506B7D5 /* PBXTargetDependency */,
+				DDCF3194A15A4939837F3855 /* PBXTargetDependency */,
+				B0A4A9554FAC4F2A85DE05F5 /* PBXTargetDependency */,
+				F88FA9300634493F88EF4D9E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		AE7D9B33890D4ECBA7F48DD4 /* update_mappings */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 624A988E8EF046399437821A /* Build configuration list for PBXAggregateTarget "update_mappings" */;
+			buildPhases = (
+				21E99E1FE0BC7692F7E6DDF3 /* Generate glfw-3.3.7/src/CMakeFiles/update_mappings */,
+			);
+			dependencies = (
+			);
+			name = update_mappings;
+			productName = update_mappings;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		08C654F097A848A3A3F88F88 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/input.c */ = {isa = PBXBuildFile; fileRef = 081757CB58F94ED2B13B0FA9 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/input.c */; };
+		0C5D271DE8794E9FBA100BAE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = C70949C25A234B1D80E99336 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_window.m */; };
+		0CAB4E91CBCE42A390725F5B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.cpp */ = {isa = PBXBuildFile; fileRef = E63EA108627D45DB824AC58F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.cpp */; };
+		0E893449A76143558709E863 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 512D6B91B78648C780BDD9D2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.m */; };
+		1BB90F71D4D64BC380172B25 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/tinycthread.c */ = {isa = PBXBuildFile; fileRef = 3A456F66F79F499E85A810A8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/tinycthread.c */; };
+		1D2287BFA14742F0AE01A1E1 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.h */ = {isa = PBXBuildFile; fileRef = 9C3835E357D946509DA609A4 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.h */; };
+		253E42DD44144DF1B3D57356 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 0ED11B3BF1C84DD5914A4BA2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.c */; };
+		27C92545AD224EE1AE8761BC /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 833B84F17E7247CE83D2080D /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_platform.h */; };
+		29284FE49416480EB8FDB3E1 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = BA33725634D7486986ECAA38 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.m */; };
+		29372B7545554E5FABCF617B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 1A7533645EAA4F73850E43D6 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist */; };
+		297E3D571BA74D5EAE438422 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/fshader_Ship.glsl */ = {isa = PBXBuildFile; fileRef = 251A5586E237499D8AAA3F52 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/fshader_Ship.glsl */; };
+		309116F41A4940F1B68F3279 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/init.c */ = {isa = PBXBuildFile; fileRef = 1061161306B44196A28AE356 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/init.c */; };
+		32C1B98886D948BF86345922 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.cpp */ = {isa = PBXBuildFile; fileRef = 7D20EB589B7D42ADA46F50E8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.cpp */; };
+		3671AF87B6214A29A9A81E82 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_gl.c */ = {isa = PBXBuildFile; fileRef = 9CD0A67C55FF407C9AD3868B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_gl.c */; };
+		370D1730C4274A7B87B75BD2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 702A8BEB91394279B5D3541B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/vulkan.c */; };
+		3DB8BF2168D544B7A26C1ACF /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 9124DC764537485DB7445377 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/glfw_config.h */; };
+		407018E4D25F4A2CAE78A812 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = BE6F5C126BA34EF39090A272 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.c */; };
+		48AA97AB64D940E3B63914AB /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 96480B2BEF3943138E2917AB /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_init.m */; };
+		4FCC0C4861594759A7AC66B6 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 1B872C71AECA47F9BDA8CB14 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.h */; };
+		6030ECA795784852B4339596 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c */ = {isa = PBXBuildFile; fileRef = 38A84C6805FD40909CDB45D5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c */; };
+		6FCDA5E98642472B8EB1A62D /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/vshader_Ship.glsl */ = {isa = PBXBuildFile; fileRef = 504358054EC14DB8A8309DC8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/vshader_Ship.glsl */; };
+		7130456129FC4F5AB7CB1465 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E66001E0913A47889BDBD59F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */; };
+		82F723CF86EE4A3DB08EBE9B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/internal.h */ = {isa = PBXBuildFile; fileRef = DA2E02292A4748C0AFCFBB39 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/internal.h */; };
+		8F8A37218A564E76BDFFEE5A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/main.cpp */ = {isa = PBXBuildFile; fileRef = E9B9DD09D78F402199451B61 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/main.cpp */; };
+		9B104AACA24B48AE81F9B940 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = CF442CB1C65540A48B0CBFBF /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.c */; };
+		9DCB1EA03F7143E3B960EA27 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0D8D12F666B74644879E0CF5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */; };
+		9E4787EF2BD441DCB162D63A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common.h */ = {isa = PBXBuildFile; fileRef = 6790914930084EF9B525ED0E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common.h */; };
+		A2D5FB48CCF545F6B08725ED /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 24389BCE835D44B990E29DEE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/monitor.c */; };
+		A3627DE2D79A44018D50FD4F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = EC95AF211B0F42CA88D5214E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3.h */; };
+		A48813FA82F64B168CD20543 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 062847A0EA984B1BAD40EB8A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_monitor.m */; };
+		A505383E00B947AA9D9DC894 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad/gl.h */ = {isa = PBXBuildFile; fileRef = 89DACA37DEF14A9AA3CCF8B7 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad/gl.h */; };
+		A783D7F9562C4AF98A751ABE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/shader.cpp */ = {isa = PBXBuildFile; fileRef = 5E51911E8C8E48CA944C4BC7 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/shader.cpp */; };
+		B2414FB4C9DC48B2A6B6217E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = E357FF665E694A9491B8A042 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.h */; };
+		B94861B834824247A530C974 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 5BA6DF9AFBB1415BB928F420 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.h */; };
+		BECA61C13B234B3E9BF86872 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = 44D407369F594EFEA1406E88 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.h */; };
+		C16BA074DED740839192A33A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.h */ = {isa = PBXBuildFile; fileRef = 3B88D28F4C9C45418C623138 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.h */; };
+		CF230AC2C04C403CB41C7C95 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/shader_process.h */ = {isa = PBXBuildFile; fileRef = AFC78E5C427E4E17B4EDBCEE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/shader_process.h */; };
+		D9C1D4099159453EB41EC5A6 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 3616F9E4A5D6462C8DEE3941 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_time.c */; };
+		E0FAA02556D544DD937C2F16 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 8F75DD692E284E099FC51E14 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.h */; };
+		E570719DCD2C473CA9547D05 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 79EA5BF5C7464461B831DB24 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/CMakeLists.txt */; };
+		EA18F0641955423EBF447E86 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/mappings.h */ = {isa = PBXBuildFile; fileRef = 012A6BF302C34A5380579273 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/mappings.h */; };
+		EBFEAE475EE74B0AB6EAF287 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 32345BD0DB994896866E8378 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3native.h */; };
+		EDEBCDEDB8A84FE6B613318F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/window.c */ = {isa = PBXBuildFile; fileRef = 3C75B1C967984EA4BE093318 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/window.c */; };
+		FE685C00C6BB41B2AE7AB1ED /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/context.c */ = {isa = PBXBuildFile; fileRef = 211FDA61E5B8432B860C28B5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/context.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3BAF464D2FEE4DC5BAF6C9BA /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		9C389172DB764173906136EA /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		C3853E73C8864A6B95073E3A /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D2096E1F64EB46ABB11638A8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0CEF4270667449A9AEBA4D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF509E382C14B93A1C0D7B3;
+			remoteInfo = glfw;
+		};
+		2A64AFD4F39B43B98D6D544D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8EFC07EBB49B8966CD153;
+			remoteInfo = ZERO_CHECK;
+		};
+		5865D5E1036B4E71BC838806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75CB2C71CC546798E931E15;
+			remoteInfo = glad;
+		};
+		5DAE53468599498ABF7F83E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8EFC07EBB49B8966CD153;
+			remoteInfo = ZERO_CHECK;
+		};
+		752467026ABB4BE7ADBA9B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41BB53B4DE804FFF82890F6F;
+			remoteInfo = asteroids;
+		};
+		AFA5F8810A2045ED8E486EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8EFC07EBB49B8966CD153;
+			remoteInfo = ZERO_CHECK;
+		};
+		D6F1D38F874E4C1DA150FE19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF509E382C14B93A1C0D7B3;
+			remoteInfo = glfw;
+		};
+		D7BBF0E3F16242A6A715CD56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF509E382C14B93A1C0D7B3;
+			remoteInfo = glfw;
+		};
+		FAD653F6C3B4471C8423542F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75CB2C71CC546798E931E15;
+			remoteInfo = glad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012A6BF302C34A5380579273 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = "glfw-3.3.7/src/mappings.h"; sourceTree = SOURCE_ROOT; };
+		062847A0EA984B1BAD40EB8A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.3.7/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		081757CB58F94ED2B13B0FA9 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.3.7/src/input.c"; sourceTree = SOURCE_ROOT; };
+		0C4DB89CFD8E43D5853F213B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0D8D12F666B74644879E0CF5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0ED11B3BF1C84DD5914A4BA2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = "glfw-3.3.7/src/egl_context.c"; sourceTree = SOURCE_ROOT; };
+		1061161306B44196A28AE356 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.3.7/src/init.c"; sourceTree = SOURCE_ROOT; };
+		1A7533645EAA4F73850E43D6 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = " build/CMakeFiles/asteroids.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		1B872C71AECA47F9BDA8CB14 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = "glfw-3.3.7/src/egl_context.h"; sourceTree = SOURCE_ROOT; };
+		211FDA61E5B8432B860C28B5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.3.7/src/context.c"; sourceTree = SOURCE_ROOT; };
+		24389BCE835D44B990E29DEE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.3.7/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		251A5586E237499D8AAA3F52 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/fshader_Ship.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_Ship.glsl; path = shaders/fshader_Ship.glsl; sourceTree = SOURCE_ROOT; };
+		32345BD0DB994896866E8378 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.3.7/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		3616F9E4A5D6462C8DEE3941 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.3.7/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		38A84C6805FD40909CDB45D5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad_vulkan.c; path = "glfw-3.3.7/deps/glad_vulkan.c"; sourceTree = SOURCE_ROOT; };
+		3A456F66F79F499E85A810A8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/tinycthread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tinycthread.c; path = "glfw-3.3.7/deps/tinycthread.c"; sourceTree = SOURCE_ROOT; };
+		3B88D28F4C9C45418C623138 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Ship.h; path = source/Ship.h; sourceTree = SOURCE_ROOT; };
+		3C75B1C967984EA4BE093318 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.3.7/src/window.c"; sourceTree = SOURCE_ROOT; };
+		44D407369F594EFEA1406E88 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = "glfw-3.3.7/src/osmesa_context.h"; sourceTree = SOURCE_ROOT; };
+		504358054EC14DB8A8309DC8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/vshader_Ship.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_Ship.glsl; path = shaders/vshader_Ship.glsl; sourceTree = SOURCE_ROOT; };
+		512D6B91B78648C780BDD9D2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.3.7/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		5BA6DF9AFBB1415BB928F420 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.3.7/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		5E51911E8C8E48CA944C4BC7 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = shaders/shader.cpp; sourceTree = SOURCE_ROOT; };
+		5ED16AB6A5474E1490EFBC21 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6790914930084EF9B525ED0E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = source/common.h; sourceTree = SOURCE_ROOT; };
+		6A5FE5D2A22D43C5A5595DB8 /* asteroids */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = asteroids; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6D252849BB41F7B39D4325 /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		702A8BEB91394279B5D3541B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.3.7/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		79EA5BF5C7464461B831DB24 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.3.7/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		7D20EB589B7D42ADA46F50E8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Ship.cpp; path = source/Ship.cpp; sourceTree = SOURCE_ROOT; };
+		833B84F17E7247CE83D2080D /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.3.7/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		89DACA37DEF14A9AA3CCF8B7 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad/gl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl.h; path = "glfw-3.3.7/deps/glad/gl.h"; sourceTree = SOURCE_ROOT; };
+		8A3E919086AD4D6AA703AA2A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.3.7/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		8F75DD692E284E099FC51E14 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.3.7/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		9124DC764537485DB7445377 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = " build/glfw-3.3.7/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		96480B2BEF3943138E2917AB /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.3.7/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		9C3835E357D946509DA609A4 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = u8names.h; path = source/utils/u8names.h; sourceTree = SOURCE_ROOT; };
+		9CD0A67C55FF407C9AD3868B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_gl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad_gl.c; path = "glfw-3.3.7/deps/glad_gl.c"; sourceTree = SOURCE_ROOT; };
+		A0EC334A62014D8EAD797A1B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/mappings.h.in */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mappings.h.in; path = "glfw-3.3.7/src/mappings.h.in"; sourceTree = SOURCE_ROOT; };
+		AFC78E5C427E4E17B4EDBCEE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/shader_process.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader_process.h; path = source/utils/shader_process.h; sourceTree = SOURCE_ROOT; };
+		BA33725634D7486986ECAA38 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.3.7/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		BE6F5C126BA34EF39090A272 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = "glfw-3.3.7/src/posix_thread.c"; sourceTree = SOURCE_ROOT; };
+		C70949C25A234B1D80E99336 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.3.7/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		CF442CB1C65540A48B0CBFBF /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = "glfw-3.3.7/src/osmesa_context.c"; sourceTree = SOURCE_ROOT; };
+		D26DF9CCB5124ED9B67F556E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = GenerateMappings.cmake; path = "glfw-3.3.7/CMake/GenerateMappings.cmake"; sourceTree = SOURCE_ROOT; };
+		DA2E02292A4748C0AFCFBB39 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.3.7/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		E357FF665E694A9491B8A042 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = "glfw-3.3.7/src/posix_thread.h"; sourceTree = SOURCE_ROOT; };
+		E63EA108627D45DB824AC58F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8names.cpp; path = source/utils/u8names.cpp; sourceTree = SOURCE_ROOT; };
+		E66001E0913A47889BDBD59F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E9B9DD09D78F402199451B61 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
+		EC95AF211B0F42CA88D5214E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.3.7/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25CB9AAEDA40459D8D4F3BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		482DD3A9F744486FA2EE841D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC13254EC24A4890AE36D903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0026FD4BE8424FD6873531FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A7533645EAA4F73850E43D6 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1A7E063CD7B24AC1B87BBECB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				9124DC764537485DB7445377 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/glfw_config.h */,
+				EC95AF211B0F42CA88D5214E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3.h */,
+				32345BD0DB994896866E8378 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include/GLFW/glfw3native.h */,
+				8F75DD692E284E099FC51E14 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.h */,
+				833B84F17E7247CE83D2080D /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_platform.h */,
+				1B872C71AECA47F9BDA8CB14 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.h */,
+				DA2E02292A4748C0AFCFBB39 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/internal.h */,
+				012A6BF302C34A5380579273 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/mappings.h */,
+				5BA6DF9AFBB1415BB928F420 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.h */,
+				44D407369F594EFEA1406E88 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.h */,
+				E357FF665E694A9491B8A042 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2D6CA8B2EBEF4B8B9AAB07EA /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				9B72F875A89E46288C340919 /* glfw */,
+				9D6EBE1DFC974E42AE227584 /* update_mappings */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		4199A27700264A0DB5597DA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A5FE5D2A22D43C5A5595DB8 /* asteroids */,
+				6F6D252849BB41F7B39D4325 /* glad */,
+				5ED16AB6A5474E1490EFBC21 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44B15A97D3B54ECDAC9D5537 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9108419268CA49DE817197AC /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				945C8917B98F4638B52F3702 /* Header Files */,
+				AA5EC8B9D2274B0899B56A67 /* Source Files */,
+				0D8D12F666B74644879E0CF5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		945C8917B98F4638B52F3702 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				89DACA37DEF14A9AA3CCF8B7 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad/gl.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		9B72F875A89E46288C340919 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				D94015D8C7634CB4A764D3BF /* Source Files */,
+				1A7E063CD7B24AC1B87BBECB /* Header Files */,
+				79EA5BF5C7464461B831DB24 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		9D6EBE1DFC974E42AE227584 /* update_mappings */ = {
+			isa = PBXGroup;
+			children = (
+				BB4A6986D6814BB496FC8255 /* Header Files */,
+				EE9838C6FC3D4DB9AB2D215D /* CMake Rules */,
+				D26DF9CCB5124ED9B67F556E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake */,
+				8A3E919086AD4D6AA703AA2A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/CMakeLists.txt */,
+			);
+			name = update_mappings;
+			sourceTree = "<group>";
+		};
+		AA5EC8B9D2274B0899B56A67 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD0A67C55FF407C9AD3868B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_gl.c */,
+				38A84C6805FD40909CDB45D5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c */,
+				3A456F66F79F499E85A810A8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/tinycthread.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AE462B8424FD4196A480E96E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B5DF7F8DD35A45B0BEA76367 /* CMake Rules */,
+				0C4DB89CFD8E43D5853F213B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B56219EF1ABE440EA0C76005 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E51911E8C8E48CA944C4BC7 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/shader.cpp */,
+				7D20EB589B7D42ADA46F50E8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.cpp */,
+				E9B9DD09D78F402199451B61 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/main.cpp */,
+				E63EA108627D45DB824AC58F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B5DF7F8DD35A45B0BEA76367 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BB4A6986D6814BB496FC8255 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC334A62014D8EAD797A1B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/mappings.h.in */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CF7374DA48C24458A790970D = {
+			isa = PBXGroup;
+			children = (
+				E945824387EA4118B92120DD /* asteroids */,
+				9108419268CA49DE817197AC /* glad */,
+				AE462B8424FD4196A480E96E /* ALL_BUILD */,
+				2D6CA8B2EBEF4B8B9AAB07EA /* GLFW3 */,
+				4199A27700264A0DB5597DA5 /* Products */,
+				44B15A97D3B54ECDAC9D5537 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D94015D8C7634CB4A764D3BF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				96480B2BEF3943138E2917AB /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_init.m */,
+				BA33725634D7486986ECAA38 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.m */,
+				062847A0EA984B1BAD40EB8A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_monitor.m */,
+				3616F9E4A5D6462C8DEE3941 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_time.c */,
+				C70949C25A234B1D80E99336 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_window.m */,
+				211FDA61E5B8432B860C28B5 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/context.c */,
+				0ED11B3BF1C84DD5914A4BA2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.c */,
+				1061161306B44196A28AE356 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/init.c */,
+				081757CB58F94ED2B13B0FA9 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/input.c */,
+				24389BCE835D44B990E29DEE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/monitor.c */,
+				512D6B91B78648C780BDD9D2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.m */,
+				CF442CB1C65540A48B0CBFBF /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.c */,
+				BE6F5C126BA34EF39090A272 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.c */,
+				702A8BEB91394279B5D3541B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/vulkan.c */,
+				3C75B1C967984EA4BE093318 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E945824387EA4118B92120DD /* asteroids */ = {
+			isa = PBXGroup;
+			children = (
+				EE132F1000724231A57622FE /* Header Files */,
+				B56219EF1ABE440EA0C76005 /* Source Files */,
+				0026FD4BE8424FD6873531FD /* Resources */,
+				E66001E0913A47889BDBD59F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/CMakeLists.txt */,
+				251A5586E237499D8AAA3F52 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/fshader_Ship.glsl */,
+				504358054EC14DB8A8309DC8 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/vshader_Ship.glsl */,
+			);
+			name = asteroids;
+			sourceTree = "<group>";
+		};
+		EE132F1000724231A57622FE /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B88D28F4C9C45418C623138 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.h */,
+				6790914930084EF9B525ED0E /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common.h */,
+				AFC78E5C427E4E17B4EDBCEE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/shader_process.h */,
+				9C3835E357D946509DA609A4 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		EE9838C6FC3D4DB9AB2D215D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41BB53B4DE804FFF82890F6F /* asteroids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E30CB6F72B76476291F86F73 /* Build configuration list for PBXNativeTarget "asteroids" */;
+			buildPhases = (
+				947689ACE78C41FFA2472F0B /* Sources */,
+				DC13254EC24A4890AE36D903 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0C4A8403DB542B39B105267 /* PBXTargetDependency */,
+				73CCFC617A014EA8B7B27FA9 /* PBXTargetDependency */,
+				FAFEDA3187B54057B7BA2445 /* PBXTargetDependency */,
+			);
+			name = asteroids;
+			productName = asteroids;
+			productReference = 6A5FE5D2A22D43C5A5595DB8 /* asteroids */;
+			productType = "com.apple.product-type.application";
+		};
+		6AF509E382C14B93A1C0D7B3 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88A3F0E075F47AF9A9F565A /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				D3902504FFA64298A3A18723 /* Sources */,
+				25CB9AAEDA40459D8D4F3BC1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 5ED16AB6A5474E1490EFBC21 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C75CB2C71CC546798E931E15 /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148865EE1B6F401298369FFA /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				363578521B394F8BAFB76D9C /* Sources */,
+				482DD3A9F744486FA2EE841D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8649EA89F544DB395296A7D /* PBXTargetDependency */,
+				C05964E6FBB748E49933D60D /* PBXTargetDependency */,
+			);
+			name = glad;
+			productName = glad;
+			productReference = 6F6D252849BB41F7B39D4325 /* glad */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E4B0A2E3D94529909EB1D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = 2B6639CE7609437383A2E1FD /* Build configuration list for PBXProject "ASTEROIDS" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				C3853E73C8864A6B95073E3A /* Debug */,
+				9C389172DB764173906136EA /* Release */,
+				3BAF464D2FEE4DC5BAF6C9BA /* MinSizeRel */,
+				D2096E1F64EB46ABB11638A8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CF7374DA48C24458A790970D;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				65F2EE5DF1A74450A72392E6 /* ALL_BUILD */,
+				59B8EFC07EBB49B8966CD153 /* ZERO_CHECK */,
+				41BB53B4DE804FFF82890F6F /* asteroids */,
+				C75CB2C71CC546798E931E15 /* glad */,
+				6AF509E382C14B93A1C0D7B3 /* glfw */,
+				AE7D9B33890D4ECBA7F48DD4 /* update_mappings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E99E1FE0BC7692F7E6DDF3 /* Generate glfw-3.3.7/src/CMakeFiles/update_mappings */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate glfw-3.3.7/src/CMakeFiles/update_mappings";
+			outputPaths = (
+"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/CMakeFiles/update_mappings"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"
+  /Applications/CMake.app/Contents/bin/cmake -P \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake\" mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"
+  /Applications/CMake.app/Contents/bin/cmake -P \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake\" mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"
+  /Applications/CMake.app/Contents/bin/cmake -P \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake\" mappings.h.in mappings.h
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"
+  /Applications/CMake.app/Contents/bin/cmake -P \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/CMake/GenerateMappings.cmake\" mappings.h.in mappings.h
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		930153BB288EC756EDE6AF98 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B23309B64F971C3BD001999D /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  make -f /Users/bsumma/Teaching/graphics/2022/starter_code/3\\ Transforms/Asteroids!/\\ build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  make -f /Users/bsumma/Teaching/graphics/2022/starter_code/3\\ Transforms/Asteroids!/\\ build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  make -f /Users/bsumma/Teaching/graphics/2022/starter_code/3\\ Transforms/Asteroids!/\\ build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build\"
+  make -f /Users/bsumma/Teaching/graphics/2022/starter_code/3\\ Transforms/Asteroids!/\\ build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		EF220574C043FA76D2683574 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363578521B394F8BAFB76D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3671AF87B6214A29A9A81E82 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_gl.c */,
+				6030ECA795784852B4339596 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/glad_vulkan.c */,
+				1BB90F71D4D64BC380172B25 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps/tinycthread.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947689ACE78C41FFA2472F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A783D7F9562C4AF98A751ABE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders/shader.cpp */,
+				32C1B98886D948BF86345922 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/Ship.cpp */,
+				8F8A37218A564E76BDFFEE5A /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/main.cpp */,
+				0CAB4E91CBCE42A390725F5B /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/utils/u8names.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3902504FFA64298A3A18723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AA97AB64D940E3B63914AB /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_init.m */,
+				29284FE49416480EB8FDB3E1 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_joystick.m */,
+				A48813FA82F64B168CD20543 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_monitor.m */,
+				D9C1D4099159453EB41EC5A6 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_time.c */,
+				0C5D271DE8794E9FBA100BAE /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/cocoa_window.m */,
+				FE685C00C6BB41B2AE7AB1ED /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/context.c */,
+				253E42DD44144DF1B3D57356 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/egl_context.c */,
+				309116F41A4940F1B68F3279 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/init.c */,
+				08C654F097A848A3A3F88F88 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/input.c */,
+				A2D5FB48CCF545F6B08725ED /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/monitor.c */,
+				0E893449A76143558709E863 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/nsgl_context.m */,
+				9B104AACA24B48AE81F9B940 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/osmesa_context.c */,
+				407018E4D25F4A2CAE78A812 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/posix_thread.c */,
+				370D1730C4274A7B87B75BD2 /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/vulkan.c */,
+				EDEBCDEDB8A84FE6B613318F /* /Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73CCFC617A014EA8B7B27FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AF509E382C14B93A1C0D7B3 /* glfw */;
+			targetProxy = D6F1D38F874E4C1DA150FE19 /* PBXContainerItemProxy */;
+		};
+		848776531D8B4DAF9506B7D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41BB53B4DE804FFF82890F6F /* asteroids */;
+			targetProxy = 752467026ABB4BE7ADBA9B60 /* PBXContainerItemProxy */;
+		};
+		B0A4A9554FAC4F2A85DE05F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AF509E382C14B93A1C0D7B3 /* glfw */;
+			targetProxy = D7BBF0E3F16242A6A715CD56 /* PBXContainerItemProxy */;
+		};
+		C05964E6FBB748E49933D60D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8EFC07EBB49B8966CD153 /* ZERO_CHECK */;
+			targetProxy = AFA5F8810A2045ED8E486EAB /* PBXContainerItemProxy */;
+		};
+		C8649EA89F544DB395296A7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AF509E382C14B93A1C0D7B3 /* glfw */;
+			targetProxy = 0CEF4270667449A9AEBA4D08 /* PBXContainerItemProxy */;
+		};
+		DDCF3194A15A4939837F3855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75CB2C71CC546798E931E15 /* glad */;
+			targetProxy = 5865D5E1036B4E71BC838806 /* PBXContainerItemProxy */;
+		};
+		E0C4A8403DB542B39B105267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75CB2C71CC546798E931E15 /* glad */;
+			targetProxy = FAD653F6C3B4471C8423542F /* PBXContainerItemProxy */;
+		};
+		F88FA9300634493F88EF4D9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8EFC07EBB49B8966CD153 /* ZERO_CHECK */;
+			targetProxy = 5DAE53468599498ABF7F83E2 /* PBXContainerItemProxy */;
+		};
+		FAFEDA3187B54057B7BA2445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8EFC07EBB49B8966CD153 /* ZERO_CHECK */;
+			targetProxy = 2A64AFD4F39B43B98D6D544D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00EF645B12314F93AD3D0EE4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1E2F58FA87B74955BBA49986 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		234971682DD0411DB02CA323 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		256A56E01942499CB32F387D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/build";
+			};
+			name = Debug;
+		};
+		2E82D5F997E346E8A1650459 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		31C1916A498247E1A164E2D2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/RelWithDebInfo/libglfw3.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/RelWithDebInfo/libglad.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/RelWithDebInfo/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		337C9B3DA6664C16ADA3CF1F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4A4EDBEE0F254C05B0CA992A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4A92F303C60A4C3C8048C0D8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/MinSizeRel/libglfw3.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/MinSizeRel/libglad.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/MinSizeRel/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5045D908549E486F85A9545E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		511978F864174254B2BA3C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		55EFD5E734B149339231A67D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/build";
+			};
+			name = MinSizeRel;
+		};
+		5ED223A629EC46699E580597 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		630DDA5659D44CD5A8060085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/Debug/libglfw3.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/Debug/libglad.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/Debug/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		64A41FFA88E742D39CEBDCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		69DB808AD44B48C1AA7B2AAF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7D65AFCE1CBF4659B29F33F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		837FE728ED99481489DEFF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/src\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall '-std=gnu99' ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9B7BE7C42D234B04A6ADF1A4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		9F13144E43DF48DFAF653F55 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A1A33F0F62AF4B51BE4ED7CE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A1EB7E96B8F74C4F9E64E6B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AB09F2EE873C41C1996D76A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B06E798893B94FB095108773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BF734587097C4FB8A4DDC811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D8E5FAF132DB49FC88B81AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/deps\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glm\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/source/common\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/shaders\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/glfw-3.3.7/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/CMakeFiles/asteroids.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/Release/libglfw3.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/Release/libglad.a\"","\"/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src/Release/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = asteroids;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F45F6AB900414673A15FF338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/build";
+			};
+			name = Release;
+		};
+		F912F59BD66A4E1DB3958E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = update_mappings;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bsumma/Teaching/graphics/2022/starter_code/3 Transforms/Asteroids!/ build/glfw-3.3.7/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		148865EE1B6F401298369FFA /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF734587097C4FB8A4DDC811 /* Debug */,
+				64A41FFA88E742D39CEBDCF9 /* Release */,
+				9F13144E43DF48DFAF653F55 /* MinSizeRel */,
+				A1A33F0F62AF4B51BE4ED7CE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2B6639CE7609437383A2E1FD /* Build configuration list for PBXProject "ASTEROIDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256A56E01942499CB32F387D /* Debug */,
+				F45F6AB900414673A15FF338 /* Release */,
+				55EFD5E734B149339231A67D /* MinSizeRel */,
+				9B7BE7C42D234B04A6ADF1A4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		624A988E8EF046399437821A /* Build configuration list for PBXAggregateTarget "update_mappings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511978F864174254B2BA3C76 /* Debug */,
+				F912F59BD66A4E1DB3958E27 /* Release */,
+				4A4EDBEE0F254C05B0CA992A /* MinSizeRel */,
+				1E2F58FA87B74955BBA49986 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C88A3F0E075F47AF9A9F565A /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D65AFCE1CBF4659B29F33F1 /* Debug */,
+				837FE728ED99481489DEFF1D /* Release */,
+				00EF645B12314F93AD3D0EE4 /* MinSizeRel */,
+				337C9B3DA6664C16ADA3CF1F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D32F7112955748A8AFE59668 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045D908549E486F85A9545E /* Debug */,
+				A1EB7E96B8F74C4F9E64E6B9 /* Release */,
+				2E82D5F997E346E8A1650459 /* MinSizeRel */,
+				5ED223A629EC46699E580597 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E30CB6F72B76476291F86F73 /* Build configuration list for PBXNativeTarget "asteroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DDA5659D44CD5A8060085 /* Debug */,
+				D8E5FAF132DB49FC88B81AC0 /* Release */,
+				4A92F303C60A4C3C8048C0D8 /* MinSizeRel */,
+				31C1916A498247E1A164E2D2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F50BBF5C8A1549608AD1A8E6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB09F2EE873C41C1996D76A7 /* Debug */,
+				B06E798893B94FB095108773 /* Release */,
+				234971682DD0411DB02CA323 /* MinSizeRel */,
+				69DB808AD44B48C1AA7B2AAF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E4B0A2E3D94529909EB1D4 /* Project object */;
+}
