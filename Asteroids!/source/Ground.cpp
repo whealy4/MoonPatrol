@@ -5,12 +5,15 @@
 #include <cstdlib>
 
 Ground::Ground() {
-    int num_points = 500;
-    float loc_x = -1.5;
-    float y_start = -1.0;
+    int num_points = 50;
+    float loc_x = -1.0;
+    float y_start = -0.5;
     float x_step1, x_step2, y_step1, y_step2;
     tcg::vec3 brown = tcg::vec3(0.5,0.35,0.0);
+    tcg::vec3 red = tcg::vec3(1.0, 0.0, 0.0);
 
+    float hole_step_x = 0.5;
+    float hole_step_y = 0.5;
     for (int i=0; i<num_points; i++) {
 
         // Random values to simulate jagged terrain
@@ -19,17 +22,47 @@ Ground::Ground() {
         y_step1 = rand() % 10 / 1000. + 0.5;
         y_step2 = rand() % 10 / 1000. + 0.5;
 
-        // Create a 4 sided polygon for one part of the gorund
+        // Create a 4 sided polygon for one part of the ground
         ground_pos.push_back(tcg::vec2(loc_x, y_start));
         ground_pos.push_back(tcg::vec2(loc_x+x_step1, y_start+y_step1));
         ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
         ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
 
-        ground_color.push_back(brown);
-        ground_color.push_back(brown);
-        ground_color.push_back(brown);
-        ground_color.push_back(brown);
-        loc_x += x_step1;
+        if (i > num_points / 5) {
+            ground_pos.push_back(tcg::vec2(loc_x+x_step1, -1* (y_start+y_step1)));
+            ground_pos.push_back(tcg::vec2(loc_x, y_start));
+            ground_pos.push_back(tcg::vec2(loc_x+x_step2, -1*(y_start+y_step2)));
+            ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
+
+
+
+//            ground_pos.push_back(tcg::vec2(loc_x, y_start));
+//            ground_pos.push_back(tcg::vec2(loc_x+x_step1, -1* (y_start+y_step1)));
+//            ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
+//            ground_pos.push_back(tcg::vec2(loc_x+x_step2, -1*(y_start+y_step2)));
+            ground_color.push_back(red);
+            ground_color.push_back(red);
+            ground_color.push_back(red);
+            ground_color.push_back(red);
+            loc_x += x_step1;
+        }
+        else {
+            ground_pos.push_back(tcg::vec2(loc_x, y_start));
+            ground_pos.push_back(tcg::vec2(loc_x+x_step1, y_start+y_step1));
+            ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
+            ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
+
+            ground_color.push_back(brown);
+            ground_color.push_back(brown);
+            ground_color.push_back(brown);
+            ground_color.push_back(brown);
+            loc_x += x_step1;
+        }
+//        ground_color.push_back(brown);
+//        ground_color.push_back(brown);
+//        ground_color.push_back(brown);
+//        ground_color.push_back(brown);
+//        loc_x += x_step1;
     }
 
     ground_bbox[0] = ground_pos[0];
