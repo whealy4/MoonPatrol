@@ -5,8 +5,9 @@
 #include <cstdlib>
 
 Ground::Ground() {
-    int num_points = 50;
+    int num_points = 700;
     float loc_x = -1.0;
+    float hole_loc_x = 0.0;
     float y_start = -0.5;
     float x_step1, x_step2, y_step1, y_step2;
     tcg::vec3 brown = tcg::vec3(0.5,0.35,0.0);
@@ -23,12 +24,12 @@ Ground::Ground() {
         y_step2 = rand() % 10 / 1000. + 0.5;
 
         // Create a 4 sided polygon for one part of the ground
-        ground_pos.push_back(tcg::vec2(loc_x, y_start));
-        ground_pos.push_back(tcg::vec2(loc_x+x_step1, y_start+y_step1));
-        ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
-        ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
+//        ground_pos.push_back(tcg::vec2(loc_x, y_start));
+//        ground_pos.push_back(tcg::vec2(loc_x+x_step1, y_start+y_step1));
+//        ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
+//        ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
 
-        if (i > num_points / 5) {
+        if (i > 20 && i < 40) {
             ground_pos.push_back(tcg::vec2(loc_x+x_step1, -1* (y_start+y_step1)));
             ground_pos.push_back(tcg::vec2(loc_x, y_start));
             ground_pos.push_back(tcg::vec2(loc_x+x_step2, -1*(y_start+y_step2)));
@@ -44,7 +45,7 @@ Ground::Ground() {
             ground_color.push_back(red);
             ground_color.push_back(red);
             ground_color.push_back(red);
-            loc_x += x_step1;
+            loc_x += 0.01;
         }
         else {
             ground_pos.push_back(tcg::vec2(loc_x, y_start));
