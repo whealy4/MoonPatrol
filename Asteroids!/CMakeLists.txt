@@ -52,6 +52,8 @@ add_executable(asteroids WIN32 MACOSX_BUNDLE
 	source/Ground.h
 	source/Wheel.cpp
 	source/Wheel.h
+	source/WheelCheck.cpp
+	source/WheelCheck.h
 	shaders/fshader_Ship.glsl
     shaders/vshader_Ship.glsl
 	shaders/fshader_Asteroid.glsl
@@ -62,6 +64,8 @@ add_executable(asteroids WIN32 MACOSX_BUNDLE
 	shaders/vshader_Ground.glsl
 	shaders/fshader_Texture.glsl
 	shaders/vshader_Texture.glsl
+	shaders/fshader_WheelCheck.glsl
+	shaders/fshader_WheelCheck.glsl
 	)
 	
 #Windows cleanup

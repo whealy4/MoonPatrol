@@ -36,6 +36,7 @@ public:
 
     void gl_init();
     void draw(tcg::mat4 proj);
+    void update_state(tcg::vec4 extents);
 };
 
 #endif /* defined(__Asteroids__Asteroid__) */

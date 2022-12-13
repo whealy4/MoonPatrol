@@ -18,13 +18,21 @@ Wheel::Wheel(unsigned int index) {
     state.angle = 0.00;
     state.angle_speed = 0.01;
 
-    wheel_vert.push_back(p0); wheel_uv.push_back(tcg::vec2(0.0,0.0));
-    wheel_vert.push_back(p1); wheel_uv.push_back(tcg::vec2(0.0,1.0));
-    wheel_vert.push_back(p2); wheel_uv.push_back(tcg::vec2(1.0,0.0));
-    wheel_vert.push_back(p3); wheel_uv.push_back(tcg::vec2(1.0,1.0));
+    wheel_vert.resize(4);
+
+    wheel_vert[0] = p0; wheel_uv.push_back(tcg::vec2(0.0,0.0));
+    wheel_vert[1] = p1; wheel_uv.push_back(tcg::vec2(0.0,1.0));
+    wheel_vert[2] = p2; wheel_uv.push_back(tcg::vec2(1.0,0.0));
+    wheel_vert[3] = p3; wheel_uv.push_back(tcg::vec2(1.0,1.0));
 
     wheel_bbox[0] = p0;
     wheel_bbox[1] = p3;
+//
+//    wheel_vert[4] = tcg::vec2(-0.0025, -1.0);
+//    wheel_vert[5] = tcg::vec2(-0.0025, 0.0);
+//    wheel_vert[6] = tcg::vec2(0.0025, -1.0);
+//    wheel_vert[7] = tcg::vec2(0.0025, 0.0);
+
     std::string file_loc = "/Users/tulane/whealy/Comp_graphics/Asteroids!/sprites/wheel_1.png";
     unsigned error = lodepng::decode(wheel_im, im_width, im_height, file_loc.c_str());
     std::cout << im_width << " X wheel " << im_height << " image loaded\n";
@@ -122,7 +130,9 @@ void Wheel::draw(tcg::mat4 Projection){
     glLineWidth(1.2);
 
     glBindTexture( GL_TEXTURE_2D, GLvars.wheel_texture );
-    glDrawArrays( GL_TRIANGLE_STRIP, 0, wheel_vert.size() );
+    glDrawArrays( GL_TRIANGLE_STRIP, 0, 4);
+//    glDrawArrays( GL_TRIANGLE_STRIP, 4, 4);
+    // DRAW MINI RECTANGLE THING NOW
 
 
 

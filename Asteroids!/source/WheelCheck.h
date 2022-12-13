@@ -1,25 +1,21 @@
 //
-// Created by Tulane on 12/8/22.
+// Created by Tulane on 12/13/22.
 //
 
-#ifndef ASTEROIDS_WHEEL_H
-#define ASTEROIDS_WHEEL_H
+#ifndef ASTEROIDS_WHEELCHECK_H
+#define ASTEROIDS_WHEELCHECK_H
 
 #include "common.h"
-//#include "Car.h"
 #include "utils/vec.h"
 
-class Wheel {
-    friend class Game;
-//    friend class Car;
+using namespace tcg;
 
-    std::vector < tcg::vec2 > wheel_vert;
-    std::vector < tcg::vec2 > wheel_uv;
+class WheelCheck {
 
-    tcg::vec2 wheel_bbox[2];
+    std::vector<vec2> wheel_check_pos;
+    std::vector<vec3> wheel_check_color;
 
-    std::vector<unsigned char> wheel_im;
-    unsigned  im_width, im_height;
+    tcg::vec2 wheel_check_bbox[2];
 
     struct {
         tcg::vec2 cur_location;
@@ -41,11 +37,10 @@ class Wheel {
     } GLvars;
 
 public:
-    Wheel (unsigned int index);
-//    void update_state(tcg::vec4 extents);
+    WheelCheck();
+    void update_state(vec4 extents);
     void gl_init();
-    void draw(tcg::mat4 proj);
-
-
+    void draw(mat4 proj);
 };
-#endif //ASTEROIDS_WHEEL_H
+
+#endif //ASTEROIDS_WHEELCHECK_H

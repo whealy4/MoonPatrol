@@ -63,7 +63,7 @@ public:
     void update() {
         car->update_state(screen_extents);
         alien1->update_state(screen_extents);
-//        ground->update_state(screen_extents);
+        ground->update_state(screen_extents);
         attachWheels();
     }
 

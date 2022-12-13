@@ -34,5 +34,6 @@
 #include "Ground.h"
 #include "Alien1.h"
 #include "Wheel.h"
+#include "WheelCheck.h"
 
 #endif

@@ -13,6 +13,8 @@ Ground::Ground() {
     tcg::vec3 brown = tcg::vec3(0.5,0.35,0.0);
     tcg::vec3 red = tcg::vec3(1.0, 0.0, 0.0);
 
+    state.velocity = tcg::vec2(-0.01, 0.0);
+
     float hole_step_x = 0.5;
     float hole_step_y = 0.5;
     for (int i=0; i<num_points; i++) {
@@ -84,6 +86,11 @@ Ground::Ground() {
 
 };
 
+void Ground::update_state(tcg::vec4 extents) {
+    state.cur_location = state.cur_location + state.velocity;
+//    std::cout << "cur location: (" << state.cur_location.x << ", " << state.cur_location
+}
+
 void Ground::gl_init() {
 
     unsigned int ground_vert_size = ground_pos.size()*sizeof(tcg::vec2);
@@ -148,8 +155,9 @@ void Ground::draw(tcg::mat4 Projection) {
     glUseProgram( GLvars.program );
     glBindVertexArray( GLvars.vao );
     tcg::mat4 M;
-    M = tcg::Translate(0.0,0.0,0.0);
-    tcg::vec2 t = tcg::vec2(0.0,0.0);
+//    M = tcg::Translate(0.0,0.0,0.0);
+    M = tcg::Translate(state.cur_location.x, state.cur_location.y, 0.0);
+//    tcg::vec2 t = tcg::vec2(0.0,0.0);
 
 
     glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, Projection*M);

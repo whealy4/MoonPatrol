@@ -62,6 +62,7 @@ void Car::update_state(tcg::vec4 extents) {
     if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]) {
         state.cur_location.y = -state.cur_location.y;
     }
+//    std::cout << "cur location: (" << state.cur_location.x << ", " << state.cur_location
 }
 
 void Car::drive_on_ground(Ground* ground) {
