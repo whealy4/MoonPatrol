@@ -25,7 +25,9 @@
 #include "Ground.h"
 #include "Alien1.h"
 #include "Wheel.h"
+#include "WheelCheck.h"
 #include "common.h"
+#include "Bullets.h"
 
 
 class Game {
@@ -35,6 +37,9 @@ public:
     Ground *ground;
     Alien1 *alien1;
     std::vector <Wheel *> wheels;
+    std::vector <Alien1 *> aliens;
+    Bullets bullets;
+    WheelCheck *wheelCheck;
     //left right bottom top of window
     tcg::vec4 screen_extents;
 
@@ -47,6 +52,8 @@ public:
         car->gl_init();
         ground->gl_init();
         alien1->gl_init();
+        wheelCheck->gl_init();
+        bullets.gl_init();
 
 //        wheel->gl_init();
     }
@@ -55,16 +62,25 @@ public:
         ground->draw(proj);
         car->draw(proj);
         alien1->draw(proj);
+        bullets.draw(proj);
         for (unsigned int i=0; i < wheels.size(); i ++) {
             wheels[i]->draw(proj);
         }
+//        wheelCheck->draw(proj);
+        car->car_bbox[0].x += 1;
+//        std::cout << "car bbox: " << car->car_bbox[0].x << "\n";
     }
 
     void update() {
         car->update_state(screen_extents);
         alien1->update_state(screen_extents);
         ground->update_state(screen_extents);
+        bullets.update_state(screen_extents);
+//        wheelCheck->update_state(screen_extents);
         attachWheels();
+        for (unsigned int i=0; i <wheels.size(); i++) {
+            WheelGroundCollision(wheels[i], ground);
+        }
     }
 
 public:
@@ -72,6 +88,7 @@ public:
 //    void gl_init();
     bool testIntersections(Car *car, Ground *ground);
     void attachWheels();
+    bool WheelGroundCollision(Wheel *w, Ground *g);
 
 
 };

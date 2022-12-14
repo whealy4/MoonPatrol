@@ -24,15 +24,17 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT)){
 //      std::cout << "M: " <<ship.M;
         ship.rotateLeft();}
+
     if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT)){
 //        std::cout << "pointing ";
+        game->bullets.add(game->car->fireRight());
         ship.rotateRight();}
   if (key == GLFW_KEY_SPACE){
     if(action == GLFW_PRESS){
 //        std::cout << "pointing ";
-      game->car->move_forward();
       asteroid.switch_dir();
       game->alien1->change_angle();
+      game->bullets.add(game->car->fireUp());
       // ship.start_thruster();
       
     }

@@ -5,16 +5,17 @@
 #include "common.h"
 
 WheelCheck::WheelCheck() {
-    state.cur_location = vec2(0, -0.45);
+    state.cur_location = vec2(0, 0.0);
 
     wheel_check_pos.resize(4);
+    wheel_check_color.resize(4);
 
     vec3 green = vec3(0.0,0.0,1.0);
 
-    wheel_check_pos[0] = tcg::vec2(-0.0025, -1.0); wheel_check_color[0] = green;
-    wheel_check_pos[1] = tcg::vec2(-0.0025, 0.0); wheel_check_color[1] = green;
-    wheel_check_pos[2] = tcg::vec2(0.0025, -1.0); wheel_check_color[2] = green;
-    wheel_check_pos[3] = tcg::vec2(0.0025, 0.0); wheel_check_color[3] = green;
+    wheel_check_pos[0] = tcg::vec2(-0.025, -1.0); wheel_check_color[0] = green;
+    wheel_check_pos[1] = tcg::vec2(-0.025, 0.0); wheel_check_color[1] = green;
+    wheel_check_pos[2] = tcg::vec2(0.025, -1.0); wheel_check_color[2] = green;
+    wheel_check_pos[3] = tcg::vec2(0.025, 0.0); wheel_check_color[3] = green;
 
 
     wheel_check_bbox[0] = wheel_check_pos[0];

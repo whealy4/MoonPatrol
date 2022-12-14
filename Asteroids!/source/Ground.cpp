@@ -5,13 +5,15 @@
 #include <cstdlib>
 
 Ground::Ground() {
-    int num_points = 700;
+    int ct = 0;
+    int num_points = 500;
     float loc_x = -1.0;
     float hole_loc_x = 0.0;
-    float y_start = -0.5;
+    float y_start = -1.0;
     float x_step1, x_step2, y_step1, y_step2;
     tcg::vec3 brown = tcg::vec3(0.5,0.35,0.0);
     tcg::vec3 red = tcg::vec3(1.0, 0.0, 0.0);
+    tcg::vec2 p0, p1, p2, p3;
 
     state.velocity = tcg::vec2(-0.01, 0.0);
 
@@ -22,8 +24,8 @@ Ground::Ground() {
         // Random values to simulate jagged terrain
         x_step1 = rand() % 10 / 100.;
         x_step2 = rand() % 10 / 100.;
-        y_step1 = rand() % 10 / 1000. + 0.5;
-        y_step2 = rand() % 10 / 1000. + 0.5;
+        y_step1 = rand() % 10 / 1000. + 0.4;
+        y_step2 = rand() % 10 / 1000. + 0.4;
 
         // Create a 4 sided polygon for one part of the ground
 //        ground_pos.push_back(tcg::vec2(loc_x, y_start));
@@ -31,7 +33,7 @@ Ground::Ground() {
 //        ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
 //        ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
 
-        if (i > 20 && i < 40) {
+        if (i > 99999) {
             ground_pos.push_back(tcg::vec2(loc_x+x_step1, -1* (y_start+y_step1)));
             ground_pos.push_back(tcg::vec2(loc_x, y_start));
             ground_pos.push_back(tcg::vec2(loc_x+x_step2, -1*(y_start+y_step2)));
@@ -50,16 +52,28 @@ Ground::Ground() {
             loc_x += 0.01;
         }
         else {
-            ground_pos.push_back(tcg::vec2(loc_x, y_start));
-            ground_pos.push_back(tcg::vec2(loc_x+x_step1, y_start+y_step1));
-            ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
-            ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
+            p0 = tcg::vec2(loc_x, y_start);
+            p1 = tcg::vec2(loc_x+x_step1, y_start+y_step1);
+            p2 = tcg::vec2(loc_x +x_step2, y_start);
+            p3 = tcg::vec2(loc_x+x_step2, y_start+y_step2);
+
+            ground_pos.push_back(p0);
+            ground_pos.push_back(p1);
+            ground_pos.push_back(p2);
+            ground_pos.push_back(p3);
 
             ground_color.push_back(brown);
             ground_color.push_back(brown);
             ground_color.push_back(brown);
             ground_color.push_back(brown);
+
+//            relative_pos[ct] = tcg::vec2(loc_x, y_start);
+            relative_pos[ct] =  p1;
+//            relative_pos[ct+2] = tcg::vec2(loc_x +x_step2, y_start);
+            relative_pos[ct+1] = p3;
+
             loc_x += x_step1;
+            ct += 2;
         }
 //        ground_color.push_back(brown);
 //        ground_color.push_back(brown);
@@ -88,6 +102,9 @@ Ground::Ground() {
 
 void Ground::update_state(tcg::vec4 extents) {
     state.cur_location = state.cur_location + state.velocity;
+    for (int i=0; i < 200; i++) {
+        relative_pos[i].x += state.velocity.x;
+    }
 //    std::cout << "cur location: (" << state.cur_location.x << ", " << state.cur_location
 }
 

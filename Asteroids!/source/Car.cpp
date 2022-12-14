@@ -32,7 +32,7 @@ Car::Car() {
     p2 = tcg::vec2(width/2., -width/2.);
     p3 = tcg::vec2(width/2., height);
 
-    state.cur_location = tcg::vec2(-1.2, -0.45);
+    state.cur_location = tcg::vec2(-1.2, -0.4);
 
     Car_vert.push_back(p0); Car_uv.push_back(tcg::vec2(0.0,0.0));
     Car_vert.push_back(p1); Car_uv.push_back(tcg::vec2(0.0,1.0));

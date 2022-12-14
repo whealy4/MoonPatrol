@@ -6,6 +6,21 @@
 
 using namespace tcg;
 
+bool Game::WheelGroundCollision(Wheel *w, Ground *g) {
+//    std::cout<< "ground pos: " << g->relative_pos[0] << ", " << g->relative_pos[5] << "\n";
+    for (int idx=1, increment=1; idx < g->ground_pos.size(); idx+=increment) {
+//        std::cout << "wheel loc: " << w->state.cur_location.x << "vs. ground loc: " <<
+//        g->ground_pos[idx].x << "\n";
+        if (abs(w->state.cur_location.x - g->relative_pos[idx].x) < 0.04    ) {
+//            std::cout << "YAY" << "\n";
+            w->state.cur_location.y = g->relative_pos[idx].y;
+            if (w->state.cur_location.y > -0.5) {
+//                std::cout << "wheel above: (" << w->state.cur_location.x << ", " << w->state.cur_location.y << ")\n";
+//                std::cout << "ground pos: (" << g->relative_pos[idx].x << ", " << g->relative_pos[idx].y << ")\n";
+            }
+        }
+    }
+}
 bool Game::testIntersections(Car *c_inter, Ground *g_inter) {
     std::vector<vec2> car_boundaries;
     float c_width, c_height, g_width, g_height;
@@ -58,9 +73,9 @@ void Game::attachWheels() {
         wheels[i]->gl_init();
     }
     float y_change = 0.05;
-    wheels[0]->state.cur_location = vec2(car->state.cur_location.x - 0.05, car->state.cur_location.y - y_change);
-    wheels[1]->state.cur_location = vec2(car->state.cur_location.x, car->state.cur_location.y - y_change);
-    wheels[2]->state.cur_location = vec2(car->state.cur_location.x + 0.05, car->state.cur_location.y - y_change);
+    wheels[0]->state.cur_location = vec2(car->state.cur_location.x - 0.05, wheels[0]->state.cur_location.y);
+    wheels[1]->state.cur_location = vec2(car->state.cur_location.x, wheels[1]->state.cur_location.y);
+    wheels[2]->state.cur_location = vec2(car->state.cur_location.x + 0.05, wheels[1]->state.cur_location.y);
 
 
 //    wheels[0]->state.cur_location = cur_location
@@ -73,6 +88,7 @@ Game::Game() {
     ground = new Ground();
     alien1 = new Alien1();
     wheels.resize(3);
+    wheelCheck = new WheelCheck();
     wheels[0] = new Wheel(1);
     wheels[1] = new Wheel(2);
     wheels[2] = new Wheel(3);
