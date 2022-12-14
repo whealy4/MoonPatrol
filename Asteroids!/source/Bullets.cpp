@@ -70,7 +70,6 @@ void Bullets::update_state(vec4 extents){
     bullets_vec.clear();
     //Also need retire bullets that are no longer needed;
     for (std::list<Bullet>::iterator it = bullets.begin(); it != bullets.end();){
-        std::cout<<"bullet" << "\n";
         it->update_state();
         if(it->state.cur_location.x < extents[0] ||
            it->state.cur_location.x > extents[1] ||

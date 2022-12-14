@@ -28,6 +28,7 @@
 #include "WheelCheck.h"
 #include "common.h"
 #include "Bullets.h"
+#include "Hole.h"
 
 
 class Game {
@@ -38,8 +39,10 @@ public:
     Alien1 *alien1;
     std::vector <Wheel *> wheels;
     std::vector <Alien1 *> aliens;
+    std::vector <Hole *> holes;
     Bullets bullets;
     WheelCheck *wheelCheck;
+    Hole *hole;
     //left right bottom top of window
     tcg::vec4 screen_extents;
 
@@ -49,17 +52,25 @@ public:
         for (unsigned int i=0; i < wheels.size(); i ++){
             wheels[i]->gl_init();
         }
+        for (unsigned int i=0; i < holes.size(); i ++){
+            holes[i]->gl_init();
+        }
         car->gl_init();
         ground->gl_init();
         alien1->gl_init();
         wheelCheck->gl_init();
         bullets.gl_init();
+        hole->gl_init();
 
 //        wheel->gl_init();
     }
 
     void draw(tcg::mat4 proj) {
         ground->draw(proj);
+        for (unsigned int i=0; i < holes.size(); i ++){
+            holes[i]->draw(proj);
+        }
+        hole->draw(proj);
         car->draw(proj);
         alien1->draw(proj);
         bullets.draw(proj);
@@ -68,6 +79,7 @@ public:
         }
 //        wheelCheck->draw(proj);
         car->car_bbox[0].x += 1;
+
 //        std::cout << "car bbox: " << car->car_bbox[0].x << "\n";
     }
 
@@ -76,6 +88,10 @@ public:
         alien1->update_state(screen_extents);
         ground->update_state(screen_extents);
         bullets.update_state(screen_extents);
+        for (unsigned int i=0; i < holes.size(); i ++){
+            holes[i]->update_state(screen_extents);
+        }
+        hole->update_state(screen_extents);
 //        wheelCheck->update_state(screen_extents);
         attachWheels();
         for (unsigned int i=0; i <wheels.size(); i++) {

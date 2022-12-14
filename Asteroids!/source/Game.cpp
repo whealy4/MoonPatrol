@@ -7,17 +7,9 @@
 using namespace tcg;
 
 bool Game::WheelGroundCollision(Wheel *w, Ground *g) {
-//    std::cout<< "ground pos: " << g->relative_pos[0] << ", " << g->relative_pos[5] << "\n";
-    for (int idx=1, increment=1; idx < g->ground_pos.size(); idx+=increment) {
-//        std::cout << "wheel loc: " << w->state.cur_location.x << "vs. ground loc: " <<
-//        g->ground_pos[idx].x << "\n";
+    for (int idx=0; idx < g->relative_pos.size(); idx+=1) {
         if (abs(w->state.cur_location.x - g->relative_pos[idx].x) < 0.04    ) {
-//            std::cout << "YAY" << "\n";
             w->state.cur_location.y = g->relative_pos[idx].y;
-            if (w->state.cur_location.y > -0.5) {
-//                std::cout << "wheel above: (" << w->state.cur_location.x << ", " << w->state.cur_location.y << ")\n";
-//                std::cout << "ground pos: (" << g->relative_pos[idx].x << ", " << g->relative_pos[idx].y << ")\n";
-            }
         }
     }
 }
@@ -76,10 +68,6 @@ void Game::attachWheels() {
     wheels[0]->state.cur_location = vec2(car->state.cur_location.x - 0.05, wheels[0]->state.cur_location.y);
     wheels[1]->state.cur_location = vec2(car->state.cur_location.x, wheels[1]->state.cur_location.y);
     wheels[2]->state.cur_location = vec2(car->state.cur_location.x + 0.05, wheels[1]->state.cur_location.y);
-
-
-//    wheels[0]->state.cur_location = cur_location
-//    wheel->state.cur_location = car->state.cur_location;
 }
 
 
@@ -87,7 +75,13 @@ Game::Game() {
     car = new Car();
     ground = new Ground();
     alien1 = new Alien1();
+    holes.resize(4);
+    holes[0] = new Hole(-0.25);
+    holes[1] = new Hole(0.0);
+    holes[2] = new Hole(1.3);
+    holes[3] = new Hole(2.5);
     wheels.resize(3);
+    hole = new Hole(0.0);
     wheelCheck = new WheelCheck();
     wheels[0] = new Wheel(1);
     wheels[1] = new Wheel(2);

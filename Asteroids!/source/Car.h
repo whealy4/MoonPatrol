@@ -62,12 +62,10 @@ public:
     void move_forward();
     void drive_on_ground(Ground* ground);
     Bullet fireUp() {
-        std::cout << "FIRE" << "\n";
         return Bullet(state.cur_location, tcg::vec2(0.0, 0.05));
     }
 
     Bullet fireRight() {
-        std::cout << "FIRE" << "\n";
         return Bullet(state.cur_location, tcg::vec2(0.05, 0.0));
     }
     // GLfloat length(const tcg::vec2& v);

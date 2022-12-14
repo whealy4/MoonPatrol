@@ -10,7 +10,7 @@ class Ground {
     std::vector <tcg::vec2> ground_pos;
     std::vector <tcg::vec3> ground_color;
     tcg::vec2 ground_bbox[2];
-    tcg::vec2 relative_pos[2000];
+    std::vector <tcg::vec2> relative_pos;
     friend class Game;
     friend class Car;
 

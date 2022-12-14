@@ -100,7 +100,8 @@
 				19,
 				21,
 				23,
-				26
+				26,
+				28
 			]
 		}
 	],
@@ -187,7 +188,8 @@
 				20,
 				22,
 				24,
-				25
+				25,
+				27
 			]
 		},
 		{
@@ -206,15 +208,14 @@
 				19,
 				21,
 				23,
-				26
+				26,
+				28
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				27,
-				28,
 				29,
 				30,
 				31,
@@ -226,7 +227,11 @@
 				37,
 				38,
 				39,
-				40
+				40,
+				41,
+				42,
+				43,
+				44
 			]
 		}
 	],
@@ -382,6 +387,17 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "source/Hole.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/Hole.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
 			"path" : "shaders/fshader_Ship.glsl",
 			"sourceGroupIndex" : 2
 		},
@@ -448,6 +464,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "shaders/vshader_Bullets.glsl",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "shaders/fshader_Hole.glsl",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "shaders/vshader_Hole.glsl",
 			"sourceGroupIndex" : 2
 		}
 	],

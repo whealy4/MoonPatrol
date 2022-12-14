@@ -27,65 +27,31 @@ Ground::Ground() {
         y_step1 = rand() % 10 / 1000. + 0.4;
         y_step2 = rand() % 10 / 1000. + 0.4;
 
-        // Create a 4 sided polygon for one part of the ground
-//        ground_pos.push_back(tcg::vec2(loc_x, y_start));
-//        ground_pos.push_back(tcg::vec2(loc_x+x_step1, y_start+y_step1));
-//        ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
-//        ground_pos.push_back(tcg::vec2(loc_x+x_step2, y_start+y_step2));
+        p0 = tcg::vec2(loc_x, y_start);
+        p1 = tcg::vec2(loc_x+x_step1, y_start+y_step1);
+        p2 = tcg::vec2(loc_x +x_step2, y_start);
+        p3 = tcg::vec2(loc_x+x_step2, y_start+y_step2);
 
-        if (i > 99999) {
-            ground_pos.push_back(tcg::vec2(loc_x+x_step1, -1* (y_start+y_step1)));
-            ground_pos.push_back(tcg::vec2(loc_x, y_start));
-            ground_pos.push_back(tcg::vec2(loc_x+x_step2, -1*(y_start+y_step2)));
-            ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
+        ground_pos.push_back(p0);
+        ground_pos.push_back(p1);
+        ground_pos.push_back(p2);
+        ground_pos.push_back(p3);
 
+        ground_color.push_back(brown);
+        ground_color.push_back(brown);
+        ground_color.push_back(brown);
+        ground_color.push_back(brown);
 
-
-//            ground_pos.push_back(tcg::vec2(loc_x, y_start));
-//            ground_pos.push_back(tcg::vec2(loc_x+x_step1, -1* (y_start+y_step1)));
-//            ground_pos.push_back(tcg::vec2(loc_x +x_step2, y_start));
-//            ground_pos.push_back(tcg::vec2(loc_x+x_step2, -1*(y_start+y_step2)));
-            ground_color.push_back(red);
-            ground_color.push_back(red);
-            ground_color.push_back(red);
-            ground_color.push_back(red);
-            loc_x += 0.01;
-        }
-        else {
-            p0 = tcg::vec2(loc_x, y_start);
-            p1 = tcg::vec2(loc_x+x_step1, y_start+y_step1);
-            p2 = tcg::vec2(loc_x +x_step2, y_start);
-            p3 = tcg::vec2(loc_x+x_step2, y_start+y_step2);
-
-            ground_pos.push_back(p0);
-            ground_pos.push_back(p1);
-            ground_pos.push_back(p2);
-            ground_pos.push_back(p3);
-
-            ground_color.push_back(brown);
-            ground_color.push_back(brown);
-            ground_color.push_back(brown);
-            ground_color.push_back(brown);
-
-//            relative_pos[ct] = tcg::vec2(loc_x, y_start);
-            relative_pos[ct] =  p1;
-//            relative_pos[ct+2] = tcg::vec2(loc_x +x_step2, y_start);
-            relative_pos[ct+1] = p3;
-
-            loc_x += x_step1;
-            ct += 2;
-        }
-//        ground_color.push_back(brown);
-//        ground_color.push_back(brown);
-//        ground_color.push_back(brown);
-//        ground_color.push_back(brown);
-//        loc_x += x_step1;
+        relative_pos.push_back(p1);
+        relative_pos.push_back(p3);
+        loc_x += x_step1;
+        ct += 2;
     }
 
     ground_bbox[0] = ground_pos[0];
     ground_bbox[1] = ground_pos.back();
 
-
+}
 
 //    for (int i=0, inc=3; i<= num_points; i+=inc) {
 //        rand_inc = rand() / 1000 - 0.05;
@@ -98,7 +64,6 @@ Ground::Ground() {
 //        loc_x += 2 * (x_step+rand_inc);
 //    }
 
-};
 
 void Ground::update_state(tcg::vec4 extents) {
     state.cur_location = state.cur_location + state.velocity;

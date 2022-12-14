@@ -36,5 +36,7 @@
 #include "Wheel.h"
 #include "WheelCheck.h"
 #include "Bullets.h"
+#include "Hole.h"
+#include "Rock.h"
 
 #endif
