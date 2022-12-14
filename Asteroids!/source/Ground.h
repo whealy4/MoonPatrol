@@ -34,6 +34,7 @@ class Ground {
     tcg::mat4 M;
 
 public:
+    int num_points = 500;
     Ground();
 
     void gl_init();

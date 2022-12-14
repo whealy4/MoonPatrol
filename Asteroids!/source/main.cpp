@@ -5,7 +5,7 @@ GLFWwindow* window;
 Game *game;
 
 Ship ship;
-Asteroid asteroid;
+//Asteroid asteroid(1);
 //Car car;
 //Ground ground;
 
@@ -17,51 +17,70 @@ static void error_callback(int error, const char* description)
   fprintf(stderr, "Error: %s\n", description);
 }
 
+void init(){
+
+    glClearColor(0.0, 0.0, 0.0, 1.0);
+    glHint (GL_LINE_SMOOTH_HINT, GL_NICEST);
+    glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
+
+//  ship.gl_init();
+//  asteroid.gl_init();
+//  car.gl_init();
+//  ground.gl_init();
+    game->init();
+
+}
+
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-  if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-    glfwSetWindowShouldClose(window, GLFW_TRUE);
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, GLFW_TRUE);
     if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT)){
-//      std::cout << "M: " <<ship.M;
-        ship.rotateLeft();}
-
-    if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT)){
+        game->car->dampen();
+        for (unsigned int i=0; i < 3; i++) {
+            game->wheels[i]->state.angle_speed -= 0.01;
+        }
+    }
+    if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT)) {
 //        std::cout << "pointing ";
-        game->bullets.add(game->car->fireRight());
-        ship.rotateRight();}
-    if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT)) {
         game->car->move_forward();
+        for (unsigned int i = 0; i < 3; i++) {
+            game->wheels[i]->state.angle_speed += 0.01;
+        }
     }
-        if (key == GLFW_KEY_SPACE){
-    if(action == GLFW_PRESS){
-//        std::cout << "pointing ";
-      asteroid.switch_dir();
-      game->alien1->change_angle();
-      game->bullets.add(game->car->fireUp());
-      // ship.start_thruster();
-      
+    if (key == GLFW_KEY_UP && (action == GLFW_PRESS || action == GLFW_REPEAT) && game->car->jump_==0) {
+        game->car->jump();
     }
-    if(action == GLFW_RELEASE){
+    if (key == GLFW_KEY_SPACE){
+        if(action == GLFW_PRESS){
+            game->bullets.add(game->car->fireRight());
+            game->bullets.add(game->car->fireUp());
+        }
+
+        }
+
+            if(action == GLFW_RELEASE){
       // ship.stop_thruster();
+            }
+
+    if (key == GLFW_KEY_R && (action == GLFW_PRESS || action == GLFW_REPEAT)) {
+        std::cout << "reset" << "\n";
+        glClear(GL_COLOR_BUFFER_BIT);
+        game = new Game();
+        init();
+        if (action == GLFW_PRESS) {
+//        std::cout << "pointing ";
+//            game->restart();
+//      game->alien1->change_angle();
+            // ship.start_thruster();
+
+        }
     }
-  }
   if (key == GLFW_KEY_Z && action == GLFW_PRESS){
   }
 }
 
-void init(){
-  
-  glClearColor(0.0, 0.0, 0.0, 1.0);
-  glHint (GL_LINE_SMOOTH_HINT, GL_NICEST);
-  glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
-    
-//  ship.gl_init();
-  asteroid.gl_init();
-//  car.gl_init();
-//  ground.gl_init();
-    game->init();
-  
-}
+
 
 //Call update function 30 times a second
 void animate(){
@@ -69,7 +88,6 @@ void animate(){
     glfwSetTime(0.0);
 
 //    ship.update_state(extents);
-    asteroid.update_state(extents);
 //    game->car->update_state(extents);
 //    car.drive_on_ground(&ground);
     game->update();
@@ -129,8 +147,7 @@ int main(void)
     glClear(GL_COLOR_BUFFER_BIT);
 
     game->draw(proj);
-    ship.draw(proj);
-    asteroid.draw(proj);
+//    ship.draw(proj);
 //    car.draw(proj);
 //    ground.draw(proj);
 

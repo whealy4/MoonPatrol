@@ -191,6 +191,20 @@ build CMakeFiles/asteroids.dir/source/Hole.cpp.o: CXX_COMPILER__asteroids_Releas
   OBJECT_DIR = CMakeFiles/asteroids.dir
   OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
 
+build CMakeFiles/asteroids.dir/source/Rock.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/Rock.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/Rock.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
+build CMakeFiles/asteroids.dir/source/GameOver.cpp.o: CXX_COMPILER__asteroids_Release /Users/tulane/whealy/Comp_graphics/Asteroids!/source/GameOver.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = CMakeFiles/asteroids.dir/source/GameOver.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/deps -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source -I/Users/tulane/whealy/Comp_graphics/Asteroids!/source/common -I/Users/tulane/whealy/Comp_graphics/Asteroids!/shaders -I/Users/tulane/whealy/Comp_graphics/Asteroids!/glfw-3.3.7/include
+  OBJECT_DIR = CMakeFiles/asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/asteroids.dir/source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target asteroids
@@ -199,7 +213,7 @@ build CMakeFiles/asteroids.dir/source/Hole.cpp.o: CXX_COMPILER__asteroids_Releas
 #############################################
 # Link the executable asteroids.app/Contents/MacOS/asteroids
 
-build asteroids.app/Contents/MacOS/asteroids: CXX_EXECUTABLE_LINKER__asteroids_Release CMakeFiles/asteroids.dir/source/utils/u8names.cpp.o CMakeFiles/asteroids.dir/source/utils/lodepng.cpp.o CMakeFiles/asteroids.dir/shaders/shader.cpp.o CMakeFiles/asteroids.dir/source/main.cpp.o CMakeFiles/asteroids.dir/source/Game.cpp.o CMakeFiles/asteroids.dir/source/Ship.cpp.o CMakeFiles/asteroids.dir/source/Asteroid.cpp.o CMakeFiles/asteroids.dir/source/Alien1.cpp.o CMakeFiles/asteroids.dir/source/Car.cpp.o CMakeFiles/asteroids.dir/source/Ground.cpp.o CMakeFiles/asteroids.dir/source/Wheel.cpp.o CMakeFiles/asteroids.dir/source/WheelCheck.cpp.o CMakeFiles/asteroids.dir/source/Bullets.cpp.o CMakeFiles/asteroids.dir/source/Hole.cpp.o | glfw-3.3.7/src/libglfw3.a libglad.a glfw-3.3.7/src/libglfw3.a || glfw-3.3.7/src/libglfw3.a libglad.a
+build asteroids.app/Contents/MacOS/asteroids: CXX_EXECUTABLE_LINKER__asteroids_Release CMakeFiles/asteroids.dir/source/utils/u8names.cpp.o CMakeFiles/asteroids.dir/source/utils/lodepng.cpp.o CMakeFiles/asteroids.dir/shaders/shader.cpp.o CMakeFiles/asteroids.dir/source/main.cpp.o CMakeFiles/asteroids.dir/source/Game.cpp.o CMakeFiles/asteroids.dir/source/Ship.cpp.o CMakeFiles/asteroids.dir/source/Asteroid.cpp.o CMakeFiles/asteroids.dir/source/Alien1.cpp.o CMakeFiles/asteroids.dir/source/Car.cpp.o CMakeFiles/asteroids.dir/source/Ground.cpp.o CMakeFiles/asteroids.dir/source/Wheel.cpp.o CMakeFiles/asteroids.dir/source/WheelCheck.cpp.o CMakeFiles/asteroids.dir/source/Bullets.cpp.o CMakeFiles/asteroids.dir/source/Hole.cpp.o CMakeFiles/asteroids.dir/source/Rock.cpp.o CMakeFiles/asteroids.dir/source/GameOver.cpp.o | glfw-3.3.7/src/libglfw3.a libglad.a glfw-3.3.7/src/libglfw3.a || glfw-3.3.7/src/libglfw3.a libglad.a
   FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   LINK_LIBRARIES = glfw-3.3.7/src/libglfw3.a  libglad.a  glfw-3.3.7/src/libglfw3.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation
   OBJECT_DIR = CMakeFiles/asteroids.dir

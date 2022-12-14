@@ -5,9 +5,10 @@
 #ifndef ASTEROIDS_WHEEL_H
 #define ASTEROIDS_WHEEL_H
 
-#include "common.h"
+//#include "common.h"
 //#include "Car.h"
-#include "utils/vec.h"
+//#include "utils/vec.h"
+#include "Game.h"
 
 class Wheel {
     friend class Game;
@@ -21,14 +22,7 @@ class Wheel {
     std::vector<unsigned char> wheel_im;
     unsigned  im_width, im_height;
 
-    struct {
-        tcg::vec2 cur_location;
-        tcg::vec4 pointing;
-        tcg::vec2 velocity;
-        tcg::mat4 wheel_M;
-        float angle;
-        float angle_speed;
-    } state;
+
 
     struct {
         GLuint vao;           //Vertex array object
@@ -41,6 +35,16 @@ class Wheel {
     } GLvars;
 
 public:
+    // Wheel state
+    struct {
+        tcg::vec2 cur_location;
+        tcg::vec4 pointing;
+        tcg::vec2 velocity;
+        tcg::mat4 wheel_M;
+        float angle;
+        float angle_speed;
+    } state;
+
     Wheel (unsigned int index);
 //    void update_state(tcg::vec4 extents);
     void gl_init();

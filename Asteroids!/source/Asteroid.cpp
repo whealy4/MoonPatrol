@@ -1,70 +1,74 @@
-// Asteroid.cpp
-// Asteroids
+//
+//  Asteroid.cpp
+//  Asteroids
+//
+//  Created by Brian Summa on 6/5/15.
+//
+//
 
-#include "common.h"
-#include <time.h>
+#include "Game.h"
 
-Asteroid::Asteroid() {
-    srand(time(NULL));
-//    float rand_x = (float)rand()/(float)RAND_MAX * 2 - 1;
-//    float rand_y = (float)rand()/(float)RAND_MAX * 2 - 1;
-    float rand_x = 0.2;
-    float rand_y = 0.4;
-    state.cur_location = tcg::vec2(rand_x, rand_y);
-    state.pointing = tcg::vec4(0.0f, 0.0f, 0.0f, 0.0f);
-    state.velocity = tcg::vec2(1.0f, 1.0f) / 500;
-    state.angle = 0.00;
-    angle_speed = 0.01;
-    accel = 0.000000;
-    rand_angle = (float)rand()/(float)RAND_MAX * 2 - 1;
-    rand_angle = 0.5;
-    int num_points = 20;
+#define _MAX_SPEED 0.05f
+#define _DAMPING 0.98f
+#define _ACC 0.008f
 
-    asteroid_pos.resize(num_points + 1);
-    asteroid_color.resize(num_points + 1);
-    flame_offset = 4;
 
-    // asteroid_pos[0] = tcg::vec2(0.0, 0.0);  asteroid_color[0] = tcg::vec3(1.0,1.0,1.0);
-    // asteroid_pos[1] = tcg::vec2(1.0, 0.0);   asteroid_color[1] = tcg::vec3(1.0,1.0,1.0);
-    // asteroid_pos[2] = tcg::vec2(1.0, 1.0);  asteroid_color[2] = tcg::vec3(1.0,1.0,1.0);
-    // asteroid_pos[3] = tcg::vec2(0.0, 1.0);   asteroid_color[3] = tcg::vec3(1.0,1.0,1.0);
 
-    float theta;
-    float x_circle, y_circle, r_circle;
-    float rand_num;
-    r_circle = 0.05;
 
-    for (int i = 0; i < num_points; i++) {
-        rand_num = ((float)rand()/(float)RAND_MAX/75);
-        theta = (i * 2 * M_PI) / (num_points - 1);
-        std::cout << theta << std::endl;
-        x_circle = r_circle * cos(theta) - rand_num;
-        y_circle = r_circle * sin(theta) + rand_num;
-        asteroid_pos[i] = tcg::vec2(x_circle, y_circle);
-        asteroid_color[i] = tcg::vec3(1.0, 1.0, 1.0);
+Asteroid::Asteroid(unsigned int index){
+    state.cur_location = tcg::vec2(-1.0, 1.0);
+    state.velocity = tcg::vec2(-1.0, 1.0);
+    state.velocity = normalize(state.velocity)*_ACC;
+    state.angle = 0.0;
+
+    angle_increment = (rand() > RAND_MAX/2)? M_PI/32 : -M_PI/32 ;
+
+    Asteroid_vert.push_back(vec2(-0.15, -0.15)); Asteroid_uv.push_back(vec2(0.0,0.0));
+    Asteroid_vert.push_back(vec2(-0.15,  0.15)); Asteroid_uv.push_back(vec2(0.0,1.0));
+    Asteroid_vert.push_back(vec2(0.14,  -0.15)); Asteroid_uv.push_back(vec2(1.0,0.0));
+    Asteroid_vert.push_back(vec2(0.09,   0.15)); Asteroid_uv.push_back(vec2(1.0,1.0));
+
+    asteroid_bbox[0] = vec2(-0.2, -0.15);
+    asteroid_bbox[1] = vec2(0.15,   0.2);
+
+    if(index == 1){
+//    std::string file_location = source_path + "sprites/Wheel_1.png";
+        std::string file_location = "/Users/tulane/Desktop/untitled folder/moon_real-master/sprites/Wheel_1.png";
+        unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
     }
+    if(index == 2){
+        std::string file_location = "/Users/tulane/Desktop/untitled folder/moon_real-master/sprites/Wheel_1.png";
+        unsigned error = lodepng::decode(asteroid_im, im_width, im_height, file_location.c_str());
+    }
+    std::cout << im_width << " X " << im_height << " image loaded\n";
+
 };
 
-void Asteroid::move_forward() {
-    // // this->asteroid_M = tcg::Translate(0.001, 0.001, 0.0)*this->asteroid_M;
-    // state.cur_location = tcg::Translate(0.001, 0.001, 0.0)*this->;
+
+
+
+void Asteroid::update_state(vec4 extents){
+
+//    state.cur_location+=state.velocity;
+//    state.angle += angle_increment;
+//
+//    if(state.cur_location.x < extents[0] || state.cur_location.x > extents[1]){
+//        state.cur_location.x = -state.cur_location.x;
+//    }
+//    if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]){
+//        state.cur_location.y = -state.cur_location.y;
+//    }
 
 }
 
-void Asteroid::update_state(tcg::vec4 extents) {
-    // state.velocity = state.velocity + accel * (tcg::normalize(tcg::vec2(state.pointing.x, state.pointing.y)/100));
-    // tcg::vec2 tmp_move = tcg::vec2(0.1, 1/10000);
-    state.cur_location = state.cur_location + state.velocity;
-    state.angle = state.angle + angle_speed;
-}
 
-void Asteroid::gl_init() {
+void Asteroid::gl_init(){
 
-    unsigned int asteroid_vert_size = asteroid_pos.size()*sizeof(tcg::vec2);
-    unsigned int asteroid_color_size = asteroid_color.size()*sizeof(tcg::vec3);
+    unsigned int Asteroid_vert_size = Asteroid_vert.size()*sizeof(vec2);
+    unsigned int Asteroid_uv_size = Asteroid_uv.size()*sizeof(vec2);
 
-    std::string vshader = shader_path + "vshader_Asteroid.glsl";
-    std::string fshader = shader_path + "fshader_Asteroid.glsl";
+    std::string vshader = shader_path + "vshader_Texture.glsl";
+    std::string fshader = shader_path + "fshader_Texture.glsl";
 
     GLchar* vertex_shader_source = readShaderSource(vshader.c_str());
     GLchar* fragment_shader_source = readShaderSource(fshader.c_str());
@@ -86,10 +90,22 @@ void Asteroid::gl_init() {
     glLinkProgram(GLvars.program);
     check_program_link(GLvars.program);
 
+    glGenTextures( 1, &GLvars.asteroid_texture );
+
+    glBindTexture( GL_TEXTURE_2D, GLvars.asteroid_texture );
+    glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, im_width, im_height,
+                  0, GL_RGBA, GL_UNSIGNED_BYTE, &asteroid_im[0]);
+    std::cout << "some" << asteroid_im[0] << "\n";
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT );
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT );
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST );
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST );
+
+
     glBindFragDataLocation(GLvars.program, 0, "fragColor");
 
     GLvars.vpos_location   = glGetAttribLocation(GLvars.program, "vPos");
-    GLvars.vcolor_location = glGetAttribLocation(GLvars.program, "vColor" );
+    GLvars.vcolor_location = glGetAttribLocation(GLvars.program, "vTexCoord" );
     GLvars.M_location = glGetUniformLocation(GLvars.program, "M" );
 
     // Create a vertex array object
@@ -103,51 +119,40 @@ void Asteroid::gl_init() {
     glBindBuffer( GL_ARRAY_BUFFER, GLvars.buffer );
 
     //Create GPU buffer to hold vertices and color
-    glBufferData( GL_ARRAY_BUFFER, asteroid_vert_size + asteroid_color_size, NULL, GL_STATIC_DRAW );
+    glBufferData( GL_ARRAY_BUFFER, Asteroid_vert_size + Asteroid_uv_size, NULL, GL_STATIC_DRAW );
     //First part of array holds vertices
-    glBufferSubData( GL_ARRAY_BUFFER, 0, asteroid_vert_size, &asteroid_pos[0] );
+    glBufferSubData( GL_ARRAY_BUFFER, 0, Asteroid_vert_size, &Asteroid_vert[0] );
     //Second part of array hold colors (offset by sizeof(triangle))
-    glBufferSubData( GL_ARRAY_BUFFER, asteroid_vert_size, asteroid_color_size, &asteroid_color[0] );
+    glBufferSubData( GL_ARRAY_BUFFER, Asteroid_vert_size, Asteroid_uv_size, &Asteroid_uv[0] );
 
     glEnableVertexAttribArray(GLvars.vpos_location);
     glEnableVertexAttribArray(GLvars.vcolor_location );
 
     glVertexAttribPointer( GLvars.vpos_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0) );
-    glVertexAttribPointer( GLvars.vcolor_location, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(asteroid_vert_size) );
+    glVertexAttribPointer( GLvars.vcolor_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(Asteroid_vert_size) );
 
-    glBindVertexArray(0); 
+    glBindVertexArray(0);
+
 }
 
-tcg::mat4 Asteroid::gen_M() {
-    mat4 M;
-    M = tcg::Translate(state.cur_location.x, state.cur_location.y, 0.0) * tcg::RotateZ(state.angle);
-//    M = tcg::Translate(state.cur_location.x, state.cur_location.y, 0.0) *
-//        tcg::RotateZ(state.angle);
-    return M;
-}
-
-void Asteroid::switch_dir() {
-    state.angle = -1 * state.angle;
-}
-
-void Asteroid::draw(tcg::mat4 Projection){
+void Asteroid::draw(mat4 Projection){
     glUseProgram( GLvars.program );
     glBindVertexArray( GLvars.vao );
 
-//    tcg::vec2 move = tcg::vec2(0.01, 0.01);
 
-//    state.asteroid_M = tcg::RotateZ(rand_angle) * tcg::Translate(state.cur_location.x, state.cur_location.y, 0.0) * tcg::RotateZ(state.angle);// *
-    state.asteroid_M = gen_M();
-    glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, Projection*state.asteroid_M);
+    mat4  ModelView = Translate(state.cur_location.x, state.cur_location.y, 0.0)
+                      * RotateZ(state.angle);
+
+    glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, Projection*ModelView);
+
+
     glLineWidth(1.2);
-    glDrawArrays( GL_TRIANGLE_FAN, 0, 20);
-    // glDrawArrays( GL_QUADS, 1, 1);
-    // glDrawArrays( GL_QUADS, 2, 1);
-    // glDrawArrays( GL_QUADS, 3, 1);
 
+    glBindTexture( GL_TEXTURE_2D, GLvars.asteroid_texture );
+    glDrawArrays( GL_TRIANGLE_STRIP, 0, Asteroid_vert.size() );
 
 
     glBindVertexArray(0);
     glUseProgram(0);
-  
+
 }

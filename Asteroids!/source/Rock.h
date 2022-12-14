@@ -11,8 +11,10 @@
 using namespace tcg;
 
 class Rock {
+public:
     std::vector <vec2> rock_pos;
     std::vector <vec3> rock_color;
+    vec2 rock_bbox[2];
 
     struct {
         vec2 cur_location;
@@ -30,13 +32,11 @@ class Rock {
     } GLvars;
     tcg::mat4 M;
 
-public:
-    Rock();
+    Rock(float x_start);
 
     void gl_init();
     void draw(tcg::mat4 proj);
     void update_state(tcg::vec4 extents);
-};
 };
 
 #endif //ASTEROIDS_ROCK_H

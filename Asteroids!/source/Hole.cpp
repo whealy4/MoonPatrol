@@ -12,7 +12,7 @@ Hole::Hole(float x_loc) {
 
     state.cur_location = vec2(x_loc, -0.45);
 
-    state.velocity = tcg::vec2(-0.01, 0.0);
+//    state.velocity = tcg::vec2(-0.01, 0.0);
     vec3 black = vec3(0.0,0.0,0.0);
     float height = (double)(rand() % 2) / 10 + 0.1;
     float width = (double)(rand() % 2) / 10 + 0.05;
@@ -25,10 +25,10 @@ Hole::Hole(float x_loc) {
     std::cout <<"Height: " << height << " Width: " << width << "\n";
 //    float height = rand() % 10 / 10;
 //    float width = rand() % 10 / 10;
-    p0 = vec2(x_loc, y_max);
-    p1 = vec2(x_loc, y_max-height);
-    p2 = vec2(x_loc+width, y_max);
-    p3 = vec2(x_loc+width, y_max-height);
+    p0 = vec2(0.0, y_max);
+    p1 = vec2(0.0, y_max-height);
+    p2 = vec2(width, y_max);
+    p3 = vec2(width, y_max-height);
 
     hole_pos[0] = p0;
     hole_pos[1] = p1;
@@ -42,6 +42,8 @@ Hole::Hole(float x_loc) {
 
     hole_bbox[0] = p0;
     hole_bbox[1] = p3;
+
+    state.cur_location = vec2(x_loc, -0.45 );
 }
 
 void Hole::update_state(vec4 extents) {

@@ -5,12 +5,16 @@
 #ifndef ASTEROIDS_BULLETS_H
 #define ASTEROIDS_BULLETS_H
 
+#include "common.h"
 #include "Game.h"
+#include "Alien1.h"
 
 using namespace tcg;
 
 class Bullet {
     friend class Bullets;
+    friend class Game;
+    friend class Alien1;
 
     // Bullet State
     struct {
@@ -19,7 +23,6 @@ class Bullet {
     } state;
 
 public:
-
     Bullet(vec2 cur_location, vec2 move) {
         state.cur_location = cur_location;
         state.move = move;
@@ -31,6 +34,8 @@ public:
 };
 
 class Bullets {
+public:
+    void update_state(vec4 extents, std::vector<Alien1 *> t);
 
     //OpenGL variables for a bullet
     struct {
@@ -42,11 +47,15 @@ class Bullets {
         GLint M_location;     //Reference to matrix in shader
     } GLvars;
 
-public:
+    struct {
+        int score;
+        int points;
+    } value;
+
     std::list < Bullet > bullets;
     std::vector < vec2 > bullets_vec;
 
-    Bullets(){ }
+    Bullets(){}
 
     ~Bullets(){
         bullets.clear();
@@ -55,7 +64,7 @@ public:
 
     void gl_init();
 
-    void update_state(vec4 extents);
+
     void draw(mat4 proj);
 
     void add(Bullet b){ bullets.push_back(b); }

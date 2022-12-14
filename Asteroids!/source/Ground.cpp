@@ -5,9 +5,8 @@
 #include <cstdlib>
 
 Ground::Ground() {
-    int ct = 0;
-    int num_points = 500;
-    float loc_x = -1.0;
+//    int num_points = 500;
+    float loc_x = -1.5;
     float hole_loc_x = 0.0;
     float y_start = -1.0;
     float x_step1, x_step2, y_step1, y_step2;
@@ -15,7 +14,7 @@ Ground::Ground() {
     tcg::vec3 red = tcg::vec3(1.0, 0.0, 0.0);
     tcg::vec2 p0, p1, p2, p3;
 
-    state.velocity = tcg::vec2(-0.01, 0.0);
+//    state.velocity = tcg::vec2(-0.01, 0.0);
 
     float hole_step_x = 0.5;
     float hole_step_y = 0.5;
@@ -45,7 +44,6 @@ Ground::Ground() {
         relative_pos.push_back(p1);
         relative_pos.push_back(p3);
         loc_x += x_step1;
-        ct += 2;
     }
 
     ground_bbox[0] = ground_pos[0];
@@ -65,13 +63,13 @@ Ground::Ground() {
 //    }
 
 
-void Ground::update_state(tcg::vec4 extents) {
-    state.cur_location = state.cur_location + state.velocity;
-    for (int i=0; i < 200; i++) {
-        relative_pos[i].x += state.velocity.x;
-    }
-//    std::cout << "cur location: (" << state.cur_location.x << ", " << state.cur_location
-}
+//void Ground::update_state(tcg::vec4 extents) {
+//    state.cur_location = state.cur_location + state.velocity;
+//    for (int i=0; i < 200; i++) {
+//        relative_pos[i].x += state.velocity.x;
+//    }
+////    std::cout << "cur location: (" << state.cur_location.x << ", " << state.cur_location
+//}
 
 void Ground::gl_init() {
 

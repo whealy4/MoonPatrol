@@ -58,6 +58,10 @@ add_executable(asteroids WIN32 MACOSX_BUNDLE
 		source/Bullets.cpp
 	source/Hole.h
 	source/Hole.cpp
+	source/Rock.h
+	source/Rock.cpp
+	source/GameOver.h
+	source/GameOver.cpp
 	shaders/fshader_Ship.glsl
     shaders/vshader_Ship.glsl
 	shaders/fshader_Asteroid.glsl
@@ -74,6 +78,8 @@ add_executable(asteroids WIN32 MACOSX_BUNDLE
 	shaders/vshader_Bullets.glsl
 	shaders/fshader_Hole.glsl
 	shaders/vshader_Hole.glsl
+	shaders/fshader_Rock.glsl
+	shaders/vshader_Rock.glsl
 	)
 	
 #Windows cleanup

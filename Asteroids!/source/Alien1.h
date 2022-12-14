@@ -12,27 +12,7 @@ using namespace tcg;
 
 class Alien1 {
     friend class Game;
-    std::vector<unsigned char> alien1_im;
-    std::vector<vec2> alien1_vert;
-    std::vector<vec2> alien1_uv;
-    unsigned im_width, im_height;
-    tcg::vec2 alien1_bbox[2];
 
-    float angle_speed;
-    float accel;
-//    float angle;
-
-    // Alien State
-    struct {
-        vec2 cur_location;
-        vec4 pointing;
-        vec2 velocity;
-        mat4 alien1_M;
-        float angle;
-        float accel;
-        std::chrono::time_point<std::chrono::system_clock> start_time;
-        std::chrono::time_point<std::chrono::system_clock> end_time;
-    } state;
 
     // OpenGL variables for Alien1
     struct {
@@ -46,6 +26,30 @@ class Alien1 {
     } GLvars;
 
 public:
+    struct {
+        vec2 cur_location;
+        vec4 pointing;
+        vec2 velocity;
+        mat4 alien1_M;
+        float angle;
+        float accel;
+        int points;
+        std::chrono::time_point<std::chrono::system_clock> start_time;
+        std::chrono::time_point<std::chrono::system_clock> end_time;
+    } state;
+
+    tcg::vec2 alien1_bbox[2];
+    std::vector<unsigned char> alien1_im;
+    std::vector<vec2> alien1_vert;
+    std::vector<vec2> alien1_uv;
+    unsigned im_width, im_height;
+
+    float angle_speed;
+    float accel;
+
+
+    bool active = false;
+
     Alien1();
     void update_state(vec4 extents);
     void gl_init();

@@ -1,4 +1,6 @@
 #include "common.h"
+#include "Alien1.h"
+
 
 void Bullets::gl_init(){
     std::string vshader = shader_path + "vshader_Bullets.glsl";
@@ -66,10 +68,13 @@ void Bullets::draw(mat4 proj){
 
 }
 
-void Bullets::update_state(vec4 extents){
+//void Bullets::update_state(vec4 extents, int alien1s) {}
+void Bullets::update_state(vec4 extents, std::vector<Alien1 *> alien1s){
+//    value.points = 1 ;
     bullets_vec.clear();
     //Also need retire bullets that are no longer needed;
     for (std::list<Bullet>::iterator it = bullets.begin(); it != bullets.end();){
+//        value.score -= 1;
         it->update_state();
         if(it->state.cur_location.x < extents[0] ||
            it->state.cur_location.x > extents[1] ||
@@ -77,9 +82,32 @@ void Bullets::update_state(vec4 extents){
            it->state.cur_location.y > extents[3]){
             it = bullets.erase(it);
         }else{
-            bullets_vec.push_back(it->state.cur_location);
-            it++;
+            for(int i=0;i<10;i++){
+                bool collisionX = it->state.cur_location.x + 0.05>= alien1s[i]->state.cur_location.x &&
+                                  alien1s[i]->state.cur_location.x + (alien1s[i]->alien1_bbox[1].x -alien1s[i]->alien1_bbox[0].x )>= it->state.cur_location.x;
+                // collision y-axis?
+                bool collisionY = it->state.cur_location.y +0.05>= alien1s[i]->state.cur_location.y &&
+                                  alien1s[i]->state.cur_location.y + (alien1s[i]->alien1_bbox[1].y -alien1s[i]->alien1_bbox[0].y ) >= it->state.cur_location.y;
+    //                std::cout<<"Bullet[0]:"<<it->hole_bbox[0]<<'\n';
+    //                std::cout<<"Bullet[1]:"<<it->hole_bbox[1]<<'\n';
+    //                std::cout<<"alien1s[0]:"<<alien1s[i]->alien1_bbox[0]<<'\n';
+    //                std::cout<<"alien1s[1]:"<<alien1s[i]->alien1_bbox[1]<<'\n';
+                if(collisionX && collisionY == true){
+//                    value.score += value.points;
+                    alien1s[i]->active = false;
+                    alien1s[i]->state.cur_location = vec2(-10,-10);
+                    it = bullets.erase(it);
+                    continue;
+    //                    game->shown--;
+                }
+//                    bool result = CheckBulletEnemyCollision(it, alien1s[i]) ;
+            }
+        bullets_vec.push_back(it->state.cur_location);
+        it->update_state();
+        it++;
         }
-    }
 
+
+
+    }
 }

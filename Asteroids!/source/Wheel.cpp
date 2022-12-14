@@ -1,11 +1,11 @@
 //
 // Created by Tulane on 12/8/22.
 //
-#include "Common.h"
+#include "Game.h"
 
 Wheel::Wheel(unsigned int index) {
-    float width = 0.05 / 1.0;
-    float height = 0.05 / 1.0;
+    float width = 0.05 / 1.5;
+    float height = 0.05 / 1.5;
 
     tcg::vec2 p0, p1, p2, p3;
     p0 = tcg::vec2(-width, -width);
@@ -33,8 +33,8 @@ Wheel::Wheel(unsigned int index) {
 //    wheel_vert[6] = tcg::vec2(0.0025, -1.0);
 //    wheel_vert[7] = tcg::vec2(0.0025, 0.0);
 
-    std::string file_loc = "/Users/tulane/whealy/Comp_graphics/Asteroids!/sprites/wheel_1.png";
-    unsigned error = lodepng::decode(wheel_im, im_width, im_height, file_loc.c_str());
+    std::string file_location = "/Users/tulane/whealy/Comp_graphics/Asteroids!/sprites/wheel_1.png";
+    unsigned error = lodepng::decode(wheel_im, im_width, im_height, file_location.c_str());
     std::cout << im_width << " X wheel " << im_height << " image loaded\n";
 }
 
@@ -105,12 +105,18 @@ void Wheel::gl_init() {
     glEnableVertexAttribArray(GLvars.vcolor_location );
 
     glVertexAttribPointer( GLvars.vpos_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0) );
-    glVertexAttribPointer( GLvars.vcolor_location, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(wheel_vert_size) );
+    glVertexAttribPointer( GLvars.vcolor_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(wheel_vert_size) );
 
     glBindVertexArray(0);
 }
 
 void Wheel::draw(tcg::mat4 Projection){
+    if (state.angle_speed > 0.07) {
+        state.angle_speed = 0.07;
+    }
+    if (state.angle_speed < 0.01) {
+        state.angle_speed = 0.01;
+    }
     glUseProgram( GLvars.program );
     glBindVertexArray( GLvars.vao );
 

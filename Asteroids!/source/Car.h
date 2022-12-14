@@ -56,10 +56,12 @@ class Car {
 public:
 
     Car();
+    int jump_ = 0;
     void update_state(tcg::vec4 extents);
     void gl_init();
     void draw(tcg::mat4 proj);
     void move_forward();
+    void dampen();
     void drive_on_ground(Ground* ground);
     Bullet fireUp() {
         return Bullet(state.cur_location, tcg::vec2(0.0, 0.05));
@@ -78,7 +80,9 @@ public:
 //                      accel*normalize(tcg::vec2(state.pointing.x, state.pointing.y));
 //     state.velocity = normalize(state.velocity);
 // }
-
+    inline void jump(){
+        jump_ = 50;
+    }
 
 };
 #endif /* defined(__Asteroids__Asteroid__) */

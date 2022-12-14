@@ -8,27 +8,33 @@
 
 using namespace tcg;
 
+float randvec(float min, float max){
+    float p1 = (max-min)*((float)rand()/(float)RAND_MAX) - ((max-min)/2.0);
+//  float p2 = (max-min)*((float)rand()/(float)RAND_MAX) - ((max-min)/2.0);
+    return p1;
+}
+
 Alien1::Alien1() {
-    state.cur_location = vec2(0.0, 0.0);
+    state.cur_location = vec2(1.3, 0.0);
     state.pointing = vec4(1.0, 1.0, 0.0, 0.0);
-    state.velocity = vec2(0.01, 0.0);
+    state.velocity = vec2(randvec(0.0,0.5), randvec(0.0,0.5));
     state.angle = M_PI/4;
     state.accel = 0.0001;
+    state.points = 100;
 //    state.start_time = (long int)std::chrono::duration_cast<std::chrono::milliseconds>
 //                       (std::chrono::system_clock::now().time_since_epoch());
     state.start_time = std::chrono::system_clock::now();
 
 
-    float width = 0.016 * 3;
-    float height = 0.016 * 3;
+    float width = 0.015 * 5;
+    float height = 0.008 * 5;
 
     vec2 p0, p1, p2, p3;
 
-    p0 = vec2(-width/2., -width/2.);
-
-    p1 = vec2(-width/2., height);
-    p2 = vec2(width/2., -width/2.);
-    p3 = vec2(width/2., height);
+    p0 = vec2(0.0, 0.0);
+    p1 = vec2(0.0, height);
+    p2 = vec2(0.0 + width, 0);
+    p3 = vec2(0.0 + width, height);
 
     alien1_vert.push_back(p0); alien1_uv.push_back(tcg::vec2(0.0,0.0));
     alien1_vert.push_back(p1); alien1_uv.push_back(tcg::vec2(0.0,1.0));
@@ -38,7 +44,7 @@ Alien1::Alien1() {
     alien1_bbox[0] = p0;
     alien1_bbox[1] = p3;
 
-    std::string file_loc = "/Users/tulane/whealy/Comp_graphics/Asteroids!/sprites/default_car.png";
+    std::string file_loc = "/Users/tulane/whealy/Comp_graphics/Asteroids!/sprites/alien3.png";
     unsigned error = lodepng::decode(alien1_im, im_width, im_height, file_loc.c_str());
     std::cout << im_width << " X " << im_height << " image loaded\n";
 }
@@ -54,7 +60,10 @@ void Alien1::update_state(vec4 extents) {
         state.pointing.y = state.pointing.y;
         state.start_time = std::chrono::system_clock::now();
     }
-    if (length(state.velocity) > 0.0100055) {
+//    if (length(state.velocity) > 0.0100055) {
+//        state.velocity = damping * state.velocity;
+//    }
+    if (sqrt(state.velocity.x*state.velocity.x + state.velocity.y*state.velocity.y) > 0.0100055){
         state.velocity = damping * state.velocity;
     }
     state.velocity = state.velocity +
@@ -62,17 +71,23 @@ void Alien1::update_state(vec4 extents) {
 //    std::cout << "velocity (" << state.velocity.x << ", " << state.velocity.y << ")\n" <<
 //    "length: " << length(state.velocity) << std::endl;
     state.cur_location = state.cur_location + state.velocity;
-    if(state.cur_location.x < extents[0] || state.cur_location.x > extents[1]){
-//        state.cur_location.x = -state.cur_location.x;
-        state.velocity.x = -state.velocity.x;
-//        state.pointing.x = -state.pointing.x;
-    }
-    if(state.cur_location.y < -0.0 ||state.cur_location.y > extents[3]) {
-//        state.cur_location.y = -state.cur_location.y;
-        state.velocity.y = -state.velocity.y;
-//        state.pointing.y = -state.pointing.y;
-    }
+//    if(state.cur_location.x < extents[0] || state.cur_location.x > extents[1]){
+////        state.cur_location.x = -state.cur_location.x;
+//        state.velocity.x = -state.velocity.x;
+////        state.pointing.x = -state.pointing.x;
+//    }
+//    if(state.cur_location.y < -0.0 ||state.cur_location.y > extents[3]) {
+////        state.cur_location.y = -state.cur_location.y;
+//        state.velocity.y = -state.velocity.y;
+////        state.pointing.y = -state.pointing.y;
+//    }
 //    change_angle();
+
+    float p = rand()% 1000;;
+//        std::cout<<"activated:"<<activated;
+    if(p<100){
+        state.velocity += vec2(-randvec(-0.2,0.2)*state.cur_location.x, -randvec(-0.2,0.2)*state.cur_location.y);
+    }
 }
 
 void Alien1::change_angle() {
@@ -165,7 +180,7 @@ void Alien1::gl_init() {
     glEnableVertexAttribArray(GLvars.vcolor_location );
 
     glVertexAttribPointer( GLvars.vpos_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0) );
-    glVertexAttribPointer( GLvars.vcolor_location, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(alien1_vert_size) );
+    glVertexAttribPointer( GLvars.vcolor_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(alien1_vert_size) );
 
     glBindVertexArray(0);
 }

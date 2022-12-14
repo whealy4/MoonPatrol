@@ -10,7 +10,6 @@ Car::Car() {
     srand(time(NULL));
     float rand_x = (float)rand()/(float)RAND_MAX * 2 - 1;
     float rand_y = (float)rand()/(float)RAND_MAX * 2 - 1;
-//    state.cur_location = tcg::vec2(rand_x, rand_y);
     state.pointing = tcg::vec4(1.0f, 0.0f, 0.0f, 0.0f);
     state.velocity = tcg::vec2(0.0f, 0.0f);
     state.angle = 0.00;
@@ -18,12 +17,9 @@ Car::Car() {
     accel = 0.00000001;
     int num_points = 6;
 
-//    car_pos.resize(num_points);
-//    car_color.resize(num_points);
-
     // Car img 32x19
     float width = 0.032 * 8;
-    float height = 0.003 * 8;
+    float height = 0.002 * 8;
 
     tcg::vec2 p0, p1, p2, p3;
     p0 = tcg::vec2(-width/2., -width/2.);
@@ -32,7 +28,7 @@ Car::Car() {
     p2 = tcg::vec2(width/2., -width/2.);
     p3 = tcg::vec2(width/2., height);
 
-    state.cur_location = tcg::vec2(-1.2, -0.4);
+    state.cur_location = tcg::vec2(0.0, -0.45);
 
     Car_vert.push_back(p0); Car_uv.push_back(tcg::vec2(0.0,0.0));
     Car_vert.push_back(p1); Car_uv.push_back(tcg::vec2(0.0,1.0));
@@ -51,6 +47,9 @@ Car::Car() {
 void Car::move_forward() {
     state.velocity = state.velocity + 
                      0.01*normalize(tcg::vec2(state.pointing.x, state.pointing.y));
+}
+void Car::dampen() {
+    state.velocity = state.velocity * 0.9;
 
 }
 
@@ -62,15 +61,6 @@ void Car::update_state(tcg::vec4 extents) {
     if(state.cur_location.y < extents[2] ||state.cur_location.y > extents[3]) {
         state.cur_location.y = -state.cur_location.y;
     }
-//    std::cout << "cur location: (" << state.cur_location.x << ", " << state.cur_location
-}
-
-void Car::drive_on_ground(Ground* ground) {
-//    state.cur_location = state.cur_location + state.velocity +
-//                         0.1 * normalize(tcg::vec2(state.pointing.x, state.pointing.y));
-//    if (state.cur_location.y < ground->ground_pos[state.cur_location.x].y) {
-//        state.cur_location.y = ground->ground_pos[state.cur_location.x].y;
-//    }
 }
 
 void Car::gl_init() {
@@ -140,7 +130,7 @@ void Car::gl_init() {
     glEnableVertexAttribArray(GLvars.vcolor_location );
 
     glVertexAttribPointer( GLvars.vpos_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0) );
-    glVertexAttribPointer( GLvars.vcolor_location, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(car_vert_size) );
+    glVertexAttribPointer( GLvars.vcolor_location, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(car_vert_size) );
 
     glBindVertexArray(0); 
 }
@@ -151,12 +141,7 @@ void Car::draw(tcg::mat4 Projection){
     glBindVertexArray( GLvars.vao );
 
     tcg::mat4 M;
-    // tcg::vec2 move = tcg::vec2(0.01, 0.01);
-    // tcg::vec
 
-    //state.cur_location.x += accel*state.velocity;
-
-    // M = tcg::RotateZ(rand_angle) * tcg::Translate(state.cur_location.x, state.cur_location.y, 0.0) * tcg::RotateZ(state.angle);// *
     M = tcg::Translate(state.cur_location.x, state.cur_location.y, 0.0);
 
 

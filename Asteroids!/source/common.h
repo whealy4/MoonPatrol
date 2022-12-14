@@ -38,5 +38,6 @@
 #include "Bullets.h"
 #include "Hole.h"
 #include "Rock.h"
+#include "GameOver.h"
 
 #endif
